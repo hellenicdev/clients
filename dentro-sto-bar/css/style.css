@@ -1069,3 +1069,18 @@ a {
     grid-auto-rows: 160px;
   }
 }
+
+.demo-badge {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  background: #e74c3c;
+  color: #fff;
+  font: 700 13px/1 'Inter', sans-serif;
+  padding: 6px 16px;
+  border-radius: 4px;
+  letter-spacing: 2px;
+  box-shadow: 0 2px 12px rgba(231,76,60,0.4);
+  pointer-events: none;
+}
