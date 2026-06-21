@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ρακί Ουζερί / Μεζεδοπωλείον</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Ρακί</a>
+      <nav class="nav" id="nav">
+        <a href="#home" data-el="Αρχική" data-en="Home">Αρχική</a>
+        <a href="#about" data-el="Ιστορία" data-en="About">Ιστορία</a>
+        <a href="#menu" data-el="Μενού" data-en="Menu">Μενού</a>
+        <a href="#gallery" data-el="Φωτογραφίες" data-en="Gallery">Φωτογραφίες</a>
+        <a href="#contact" data-el="Επικοινωνία" data-en="Contact">Επικοινωνία</a>
+      </nav>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg" style="background-image: url('images/hero.jpg');"></div>
+    <div class="hero-content container">
+      <h1 class="hero-title">Ρακί</h1>
+      <p class="hero-sub" data-el="Ουζερί / Μεζεδοπωλείον" data-en="Ouzeri / Mezedopoleion">Ουζερί / Μεζεδοπωλείον</p>
+      <p class="hero-desc" data-el="Γεύσεις Κρήτης στην καρδιά της Θεσσαλονίκης" data-en="Cretan flavors in the heart of Thessaloniki">Γεύσεις Κρήτης στην καρδιά της Θεσσαλονίκης</p>
+      <a href="#contact" class="btn" data-el="Κλείσε τραπέζι" data-en="Book a table">Κλείσε τραπέζι</a>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title" data-el="Η Ιστορία μας" data-en="Our Story">Η Ιστορία μας</h2>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p data-el="Το <strong>Ρακί Ουζερί / Μεζεδοπωλείον</strong> άνοιξε τις πόρτες του στις 6 Οκτωβρίου 2018, στη συμβολή της Βασιλέως Γεωργίου με την παράδοση. Δημιούργημα ενός Χανιώτη, του Στυλιανού, ο χώρος αυτός μεταφέρει την αυθεντική κρητική φιλοξενία και γαστρονομία στο κέντρο της Θεσσαλονίκης." data-en="<strong>Raki Ouzeri / Mezedopoleion</strong> opened its doors on October 6, 2018, at the intersection of Vasileos Georgiou street and tradition. Created by Stylianos, a native of Chania, this space brings authentic Cretan hospitality and gastronomy to the heart of Thessaloniki.">Το <strong>Ρακί Ουζερί / Μεζεδοπωλείον</strong> άνοιξε τις πόρτες του στις 6 Οκτωβρίου 2018, στη συμβολή της Βασιλέως Γεωργίου με την παράδοση. Δημιούργημα ενός Χανιώτη, του Στυλιανού, ο χώρος αυτός μεταφέρει την αυθεντική κρητική φιλοξενία και γαστρονομία στο κέντρο της Θεσσαλονίκης.</p>
+          <p data-el="Σερβίρουμε ποικιλία εκλεκτών μεζέδων, φρέσκα ψάρια και κρεατικά, μαγειρεμένα με μεράκι και παραδοσιακές συνταγές. Η κρητική κουζίνα συναντά την αστική ατμόσφαιρα της Θεσσαλονίκης — ντάκος, απάκι, στάκα, χοχλιοί, σουβλάκια και φρέσκο ψάρι." data-en="We serve a variety of fine mezedes, fresh seafood and meats, cooked with passion and traditional recipes. Cretan cuisine meets the urban atmosphere of Thessaloniki — dakos, apaki, staka, snails, souvlaki and fresh fish.">Σερβίρουμε ποικιλία εκλεκτών μεζέδων, φρέσκα ψάρια και κρεατικά, μαγειρεμένα με μεράκι και παραδοσιακές συνταγές. Η κρητική κουζίνα συναντά την αστική ατμόσφαιρα της Θεσσαλονίκης — ντάκος, απάκι, στάκα, χοχλιοί, σουβλάκια και φρέσκο ψάρι.</p>
+          <p data-el="Τα βράδια μας ζωντανεύουν με κρητική μουσική, όπου οι επισκέπτες χορεύουν και γλεντούν μέχρι το πρωί. Εδώ η Κρήτη συναντά τη Θεσσαλονίκη — και το ρακί ρέει άφθονο." data-en="Our evenings come alive with Cretan live music, where guests dance and celebrate until morning. Here, Crete meets Thessaloniki — and raki flows abundantly.">Τα βράδια μας ζωντανεύουν με κρητική μουσική, όπου οι επισκέπτες χορεύουν και γλεντούν μέχρι το πρωί. Εδώ η Κρήτη συναντά τη Θεσσαλονίκη — και το ρακί ρέει άφθονο.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">2018</span>
+              <span class="stat-label" data-el="Άνοιξε" data-en="Opened">Άνοιξε</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">09:30–03:00</span>
+              <span class="stat-label" data-el="Καθημερινά" data-en="Daily hours">Καθημερινά</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">Κρήτη</span>
+              <span class="stat-label" data-el="Παράδοση" data-en="Tradition">Παράδοση</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="images/interior-1.jpg" alt="Interior of Raki Ouzeri">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="menu">
+    <div class="container">
+      <h2 class="section-title" data-el="Μενού" data-en="Menu">Μενού</h2>
+      <p class="section-desc" data-el="Επιλεγμένοι μεζέδες από την κρητική γη και τη θάλασσα" data-en="Selected mezedes from the Cretan land and sea">Επιλεγμένοι μεζέδες από την κρητική γη και τη θάλασσα</p>
+
+      <div class="menu-categories" id="menuCategories">
+
+        <div class="menu-category reveal">
+          <button class="category-header active" aria-expanded="true">
+            <span data-el="Ορεκτικά &amp; Σαλάτες" data-en="Appetizers &amp; Salads">Ορεκτικά &amp; Σαλάτες</span>
+            <span class="category-arrow">▼</span>
+          </button>
+          <div class="category-body open">
+            <div class="menu-grid">
+              <div class="menu-item">
+                <div class="menu-img"><img src="images/dakos.jpg" alt="Ντάκος" loading="lazy"></div>
+                <div class="menu-info">
+                  <h3 data-el="Ντάκος" data-en="Cretan Dakos">Ντάκος</h3>
+                  <span class="menu-price">€7.50</span>
+                  <p data-el="Παξιμάδι κριθαρένιο με φρέσκια ντομάτα, μυζήθρα, ελιά και ρίγανη" data-en="Barley rusk with fresh tomato, myzithra cheese, olive and oregano">Παξιμάδι κριθαρένιο με φρέσκια ντομάτα, μυζήθρα, ελιά και ρίγανη</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-img"><img src="images/kritiki-salata.jpg" alt="Κρητική σαλάτα" loading="lazy"></div>
+                <div class="menu-info">
+                  <h3 data-el="Κρητική σαλάτα" data-en="Cretan salad">Κρητική σαλάτα</h3>
+                  <span class="menu-price">€8.00</span>
+                  <p data-el="Ντάκος με ντομάτα, κάπαρη, ελιές και ξινομυζήθρα" data-en="Dakos with tomato, capers, olives and sour myzithra">Ντάκος με ντομάτα, κάπαρη, ελιές και ξινομυζήθρα</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-img"><img src="images/fava.jpg" alt="Φάβα" loading="lazy"></div>
+                <div class="menu-info">
+                  <h3 data-el="Φάβα" data-en="Fava">Φάβα</h3>
+                  <span class="menu-price">€5.50</span>
+                  <p data-el="Κρητική φάβα με κάπαρη, κρεμμύδι και ελαιόλαδο" data-en="Cretan fava with capers, onion and olive oil">Κρητική φάβα με κάπαρη, κρεμμύδι και ελαιόλαδο</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-img"><img src="images/bougiourdi.jpg" alt="Μπουγιουρντί" loading="lazy"></div>
+                <div class="menu-info">
+                  <h3 data-el="Μπουγιουρντί" data-en="Bougiourdi">Μπουγιουρντί</h3>
+                  <span class="menu-price">€6.50</span>
+                  <p data-el="Φέτα ψημένη με ντομάτα, πιπεριά και μπαχαρικά" data-en="Baked feta with tomato, pepper and spices">Φέτα ψημένη με ντομάτα, πιπεριά και μπαχαρικά</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-img"><img src="images/kolokythokeftedes.jpg" alt="Κολοκυθοκεφτέδες" loading="lazy"></div>
+                <div class="menu-info">
+                  <h3 data-el="Κολοκυθοκεφτέδες" data-en="Zucchini fritters">Κολοκυθοκεφτέδες</h3>
+                  <span class="menu-price">€6.00</span>
+                  <p data-el="Τηγανητοί κολοκυθοκεφτέδες με δυόσμο και φέτα" data-en="Fried zucchini fritters with mint and feta">Τηγανητοί κολοκυθοκεφτέδες με δυόσμο και φέτα</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-img"><img src="images/myizithropitakia.jpg" alt="Μυζηθροπιτάκια" loading="lazy"></div>
+                <div class="menu-info">
+                  <h3 data-el="Κισσαμίτικα μυζηθροπιτάκια" data-en="Kissamos myzithropitakia">Κισσαμίτικα μυζηθροπιτάκια</h3>
+                  <span class="menu-price">€7.00</span>
+                  <p data-el="Τηγανητά πιτάκια με μυζήθρα και μέλι" data-en="Fried pies with myzithra cheese and honey">Τηγανητά πιτάκια με μυζήθρα και μέλι</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-img"><img src="images/psita-laxanika.jpg" alt="Ψητά λαχανικά" loading="lazy"></div>
+                <div class="menu-info">
+                  <h3 data-el="Ψητά λαχανικά" data-en="Grilled vegetables">Ψητά λαχανικά</h3>
+                  <span class="menu-price">€6.50</span>
+                  <p data-el="Ποικιλία ψητών λαχανικών εποχής με ελαιόλαδο" data-en="Seasonal grilled vegetables with olive oil">Ποικιλία ψητών λαχανικών εποχής με ελαιόλαδο</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-category reveal">
+          <button class="category-header" aria-expanded="false">
+            <span data-el="Θαλασσινά" data-en="Seafood">Θαλασσινά</span>
+            <span class="category-arrow">▼</span>
+          </button>
+          <div class="category-body">
+            <div class="menu-grid">
+              <div class="menu-item">
+                <div class="menu-img"><img src="images/kalamaria.jpg" alt="Καλαμάρια σχάρας" loading="lazy"></div>
+                <div class="menu-info">
+                  <h3 data-el="Καλαμάρια σχάρας" data-en="Grilled calamari">Καλαμάρια σχάρας</h3>
+                  <span class="menu-price">€9.50</span>
+                  <p data-el="Φρέσκα καλαμάρια στη σχάρα με λεμόνι και ρίγανη" data-en="Fresh grilled calamari with lemon and oregano">Φρέσκα καλαμάρια στη σχάρα με λεμόνι και ρίγανη</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-img"><img src="images/kalamarakia-2.jpg" alt="Καλαμαράκια" loading="lazy"></div>
+                <div class="menu-info">
+                  <h3 data-el="Καλαμαράκια τηγανητά" data-en="Fried calamari">Καλαμαράκια τηγανητά</h3>
+                  <span class="menu-price">€9.00</span>
+                  <p data-el="Τραγανά τηγανητά καλαμαράκια με σκορδαλιά" data-en="Crispy fried calamari with garlic dip">Τραγανά τηγανητά καλαμαράκια με σκορδαλιά</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-img"><img src="images/pastourmas.jpg" alt="Παστουρμάς θαλάσσης" loading="lazy"></div>
+                <div class="menu-info">
+                  <h3 data-el="Παστουρμάς θαλάσσης" data-en="Cured fish pastourmas">Παστουρμάς θαλάσσης</h3>
+                  <span class="menu-price">€8.50</span>
+                  <p data-el="Ψάρι παστό με μπαχαρικά, μεζές ιδανικός για ρακί" data-en="Cured fish with spices, perfect meze for raki">Ψάρι παστό με μπαχαρικά, μεζές ιδανικός για ρακί</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-category reveal">
+          <button class="category-header" aria-expanded="false">
+            <span data-el="Κρεατικά" data-en="Meat">Κρεατικά</span>
+            <span class="category-arrow">▼</span>
+          </button>
+          <div class="category-body">
+            <div class="menu-grid">
+              <div class="menu-item">
+                <div class="menu-img"><img src="images/souvlaki.jpg" alt="Σουβλάκι" loading="lazy"></div>
+                <div class="menu-info">
+                  <h3 data-el="Σουβλάκι χοιρινό" data-en="Pork souvlaki">Σουβλάκι χοιρινό</h3>
+                  <span class="menu-price">€8.50</span>
+                  <p data-el="Χοιρινό σουβλάκι μαριναρισμένο, ψημένο στα κάρβουνα" data-en="Marinated pork souvlaki grilled over charcoal">Χοιρινό σουβλάκι μαριναρισμένο, ψημένο στα κάρβουνα</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-img"><img src="images/tigania-raki.jpg" alt="Τηγανιά Ρακί" loading="lazy"></div>
+                <div class="menu-info">
+                  <h3 data-el="Τηγανιά «Ρακί»" data-en="Raki sauté">Τηγανιά «Ρακί»</h3>
+                  <span class="menu-price">€9.00</span>
+                  <p data-el="Χοιρινή τηγανιά με πιπεριά, κρεμμύδι και μυρωδικά" data-en="Pork sauté with peppers, onions and herbs">Χοιρινή τηγανιά με πιπεριά, κρεμμύδι και μυρωδικά</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-img"><img src="images/kavourmas.jpg" alt="Καβουρμάς" loading="lazy"></div>
+                <div class="menu-info">
+                  <h3 data-el="Καβουρμάς με αυγό" data-en="Kavourmas with egg">Καβουρμάς με αυγό</h3>
+                  <span class="menu-price">€8.50</span>
+                  <p data-el="Παραδοσιακός κρητικός καβουρμάς με τηγανητό αυγό μάτι" data-en="Traditional Cretan kavourmas with fried egg">Παραδοσιακός κρητικός καβουρμάς με τηγανητό αυγό μάτι</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-img"><img src="images/loukaniko.jpg" alt="Λουκάνικο" loading="lazy"></div>
+                <div class="menu-info">
+                  <h3 data-el="Λουκάνικο &amp; σουτζουκάκια" data-en="Sausage &amp; soutzoukakia">Λουκάνικο &amp; σουτζουκάκια</h3>
+                  <span class="menu-price">€8.00</span>
+                  <p data-el="Πικάντικο λουκάνικο με σουτζουκάκια σε σάλτσα ντομάτας" data-en="Spicy sausage with soutzoukakia in tomato sauce">Πικάντικο λουκάνικο με σουτζουκάκια σε σάλτσα ντομάτας</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-img"><img src="images/keftedes.jpg" alt="Κεφτέδες" loading="lazy"></div>
+                <div class="menu-info">
+                  <h3 data-el="Κεφτέδες τηγανητοί" data-en="Fried meatballs">Κεφτέδες τηγανητοί</h3>
+                  <span class="menu-price">€7.00</span>
+                  <p data-el="Χειροποίητοι κεφτέδες με μυρωδικά, τηγανητοί" data-en="Handmade meatballs with herbs, fried">Χειροποίητοι κεφτέδες με μυρωδικά, τηγανητοί</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-img"><img src="images/ntakos-2.jpg" alt="Σφακιανή πίτα" loading="lazy"></div>
+                <div class="menu-info">
+                  <h3 data-el="Σφακιανή πίτα" data-en="Sfakian pie">Σφακιανή πίτα</h3>
+                  <span class="menu-price">€6.50</span>
+                  <p data-el="Παραδοσιακή κρητική πίτα με μυζήθρα και μέλι" data-en="Traditional Cretan pie with myzithra cheese and honey">Παραδοσιακή κρητική πίτα με μυζήθρα και μέλι</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-category reveal">
+          <button class="category-header" aria-expanded="false">
+            <span data-el="Ποτά" data-en="Drinks">Ποτά</span>
+            <span class="category-arrow">▼</span>
+          </button>
+          <div class="category-body">
+            <div class="menu-grid">
+              <div class="menu-item">
+                <div class="menu-img"><img src="images/rakomelo.jpg" alt="Ρακόμελο" loading="lazy"></div>
+                <div class="menu-info">
+                  <h3 data-el="Ρακόμελο" data-en="Rakomelo">Ρακόμελο</h3>
+                  <span class="menu-price">€4.00</span>
+                  <p data-el="Κρητική ρακή με μέλι και κανέλα — ζεστή ή κρύα" data-en="Cretan raki with honey and cinnamon — hot or cold">Κρητική ρακή με μέλι και κανέλα — ζεστή ή κρύα</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-img"><img src="images/rakomelo.jpg" alt="Ρακί" loading="lazy"></div>
+                <div class="menu-info">
+                  <h3 data-el="Ρακί (μονοπότηρο)" data-en="Raki (single shot)">Ρακί (μονοπότηρο)</h3>
+                  <span class="menu-price">€3.00</span>
+                  <p data-el="Παραδοσιακό κρητικό απόσταγμα — σκέτο ή γλυκό" data-en="Traditional Cretan distillate — neat or sweet">Παραδοσιακό κρητικό απόσταγμα — σκέτο ή γλυκό</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-img"><img src="images/rakomelo.jpg" alt="Τσίπουρο" loading="lazy"></div>
+                <div class="menu-info">
+                  <h3 data-el="Τσίπουρο" data-en="Tsipouro">Τσίπουρο</h3>
+                  <span class="menu-price">€3.50</span>
+                  <p data-el="Ελληνικό απόσταγμα — χύμα ή εμφιαλωμένο" data-en="Greek distillate — bulk or bottled">Ελληνικό απόσταγμα — χύμα ή εμφιαλωμένο</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="menu-cta reveal">
+        <a href="https://www.tavernoxoros.gr/?p=t19749&t=menu" target="_blank" class="btn btn-outline" data-el="Δες όλο τον κατάλογο" data-en="View full menu">Δες όλο τον κατάλογο</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <div class="container">
+      <h2 class="section-title" data-el="Φωτογραφίες" data-en="Gallery">Φωτογραφίες</h2>
+      <p class="section-desc" data-el="Η ατμόσφαιρα, οι γεύσεις και οι στιγμές μας" data-en="Our atmosphere, flavors and moments">Η ατμόσφαιρα, οι γεύσεις και οι στιγμές μας</p>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item reveal"><img src="images/atmosphere.jpg" alt="Εσωτερικός χώρος" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/atmosphere-2.jpg" alt="Εσωτερικός χώρος" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/gallery-extra-1.jpg" alt="Εσωτερικός χώρος" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/interior-2.jpg" alt="Εσωτερικός χώρος" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/biscotto-food-3.jpg" alt="Πιάτο" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/biscotto-interior-3.jpg" alt="Εσωτερικός χώρος" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/biscotto-food-1.jpg" alt="Πιάτο" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/biscotto-food-2.jpg" alt="Πιάτο" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/souvlaki.jpg" alt="Σουβλάκι" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <h2 class="section-title" data-el="Επικοινωνία" data-en="Contact">Επικοινωνία</h2>
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <div class="contact-block">
+            <span class="contact-icon">📍</span>
+            <div>
+              <h3 data-el="Διεύθυνση" data-en="Address">Διεύθυνση</h3>
+              <p>Βασιλέως Γεωργίου 16<br>Θεσσαλονίκη 546 40</p>
+            </div>
+          </div>
+          <div class="contact-block">
+            <span class="contact-icon">📞</span>
+            <div>
+              <h3 data-el="Τηλέφωνο" data-en="Phone">Τηλέφωνο</h3>
+              <p><a href="tel:+302310820891">2310 820 891</a></p>
+            </div>
+          </div>
+          <div class="contact-block">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <h3 data-el="Email" data-en="Email">Email</h3>
+              <p><a href="mailto:stkarag@hotmail.com">stkarag@hotmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-block">
+            <span class="contact-icon">🕒</span>
+            <div>
+              <h3 data-el="Ωράριο" data-en="Hours">Ωράριο</h3>
+              <p data-el="Καθημερινά: 09:30 - 03:00" data-en="Daily: 09:30 - 03:00">Καθημερινά: 09:30 - 03:00</p>
+            </div>
+          </div>
+          <div class="contact-block">
+            <span class="contact-icon">🌐</span>
+            <div>
+              <h3 data-el="Ακολουθήστε μας" data-en="Follow us">Ακολουθήστε μας</h3>
+              <div class="social-links">
+                <a href="https://www.facebook.com/RakiOuzeriMezedopoleion/" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+                <a href="https://www.instagram.com/raki__mezedopoleion/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d604.5702880175938!2d22.953379444893437!3d40.6208748198927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a839572c9f895b%3A0xff4eab024803367c!2zUsOga8OtIE_hnZPOp8OZzqDOmc65z4TOsc6_z4TOuc6xz4TOtw!5e0!3m2!1sel!2sgr!4v1718800000000" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Ρακί Ουζερί / Μεζεδοπωλείον</p>
+      <p data-el="Με αγάπη από την Κρήτη στη Θεσσαλονίκη" data-en="With love from Crete to Thessaloniki">Με αγάπη από την Κρήτη στη Θεσσαλονίκη</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
