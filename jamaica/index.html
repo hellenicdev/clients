@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jamaica Ντισκοκαφενείο</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="demo-badge">DEMO</div>
+
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Jamaica</a>
+      <nav class="nav" id="nav">
+        <a href="#home" data-el="nav.home">Αρχική</a>
+        <a href="#about" data-el="nav.about">Σχετικά</a>
+        <a href="#menu" data-el="nav.menu">Μενού</a>
+        <a href="#gallery" data-el="nav.gallery">Φωτογραφίες</a>
+        <a href="#faq" data-el="nav.faq">FAQ</a>
+        <a href="#contact" data-el="nav.contact">Επικοινωνία</a>
+      </nav>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">&#9776;</button>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 data-el="hero.title">Jamaica Ντισκοκαφενείο</h1>
+      <p class="hero-tagline" data-el="hero.tagline">Το νέο σου στέκι στην πόλη!</p>
+      <p class="hero-sub" data-el="hero.sub">Breakfast &bull; Brunch &bull; Café &bull; Disco</p>
+      <a href="#contact" class="btn" data-el="hero.cta">Βρες μας</a>
+    </div>
+  </section>
+
+  <section class="section about reveal" id="about">
+    <div class="container">
+      <h2 class="section-title" data-el="about.title">Σχετικά</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-el="about.p1">Το Jamaica είναι το νέο στέκι της Θεσσαλονίκης — ένας ζεστός χώρος συνάντησης που συνδυάζει χαλαρές στιγμές στον καφέ, δημιουργικά brunch και ανεπανάληπτα live βράδια.</p>
+          <p data-el="about.p2">Στη Λεωφόρο Βασιλέως Γεωργίου 44, σε περιμένουμε κάθε μέρα από τις 09:00 το πρωί έως τις 05:00 τα ξημερώματα. Εδώ η μέρα ξεκινά με άρωμα καφέ και τελειώνει με μουσική και παρέα.</p>
+        </div>
+        <div class="about-info">
+          <div class="info-card">
+            <h3 data-el="about.hours">Ώρες Λειτουργίας</h3>
+            <p data-el="about.hours.daily">Καθημερινά: 09:00 – 05:00</p>
+          </div>
+          <div class="info-card">
+            <h3 data-el="about.findus">Βρες μας</h3>
+            <p>Λεωφ. Βασιλέως Γεωργίου 44<br>Θεσσαλονίκη 54640</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section menu reveal" id="menu">
+    <div class="container">
+      <h2 class="section-title" data-el="menu.title">Μενού</h2>
+      <p class="menu-intro" data-el="menu.intro">Από τον πρωινό καφέ μέχρι τα cocktails της νύχτας — κάθε γεύση έχει τη θέση της στο Jamaica.</p>
+      <div class="menu-categories">
+        <div class="menu-card">
+          <div class="menu-icon">☕</div>
+          <h3 data-el="menu.coffee">Καφές</h3>
+          <p data-el="menu.coffee.desc">Espresso, cappuccino, freddo, specialty coffee & περισσότερα.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-icon">🥞</div>
+          <h3 data-el="menu.brunch">Brunch</h3>
+          <p data-el="menu.brunch.desc">Πλούσια brunch με φρέσκα υλικά κάθε μέρα.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-icon">🍸</div>
+          <h3 data-el="menu.cocktails">Cocktails</h3>
+          <p data-el="menu.cocktails.desc">Δροσερά cocktails, ποτά & επιλεγμένα κρασιά.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-icon">🎶</div>
+          <h3 data-el="menu.events">Live Events</h3>
+          <p data-el="menu.events.desc">Μουσικές βραδιές, parties και απρόβλεπτες εκπλήξεις.</p>
+        </div>
+      </div>
+      <p class="menu-note" data-el="menu.note">Ακολούθησέ μας στο Instagram για το πλήρες μενού & τις προτάσεις ημέρας!</p>
+    </div>
+  </section>
+
+  <section class="section gallery reveal" id="gallery">
+    <div class="container">
+      <h2 class="section-title" data-el="gallery.title">Φωτογραφίες</h2>
+      <div class="gallery-grid" id="galleryGrid">
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq reveal" id="faq">
+    <div class="container">
+      <h2 class="section-title" data-el="faq.title">Συχνές Ερωτήσεις</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" data-el="faq.q1">Ποιες είναι οι ώρες λειτουργίας;</button>
+          <div class="faq-a">
+            <p data-el="faq.a1">Είμαστε ανοιχτά καθημερινά από 09:00 το πρωί έως 05:00 τα ξημερώματα.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-el="faq.q2">Πού βρίσκεστε;</button>
+          <div class="faq-a">
+            <p data-el="faq.a2">Λεωφόρος Βασιλέως Γεωργίου 44, Θεσσαλονίκη 54640 — ακριβώς στο κέντρο της πόλης.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-el="faq.q3">Τι είδους μαγαζί είστε;</button>
+          <div class="faq-a">
+            <p data-el="faq.a3">Είμαστε ένα ζεστό ντισκοκαφενείο που συνδυάζει specialty coffee, πλούσιο brunch, cocktails και live μουσικές βραδιές.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-el="faq.q4">Κάνετε ζωντανή μουσική;</button>
+          <div class="faq-a">
+            <p data-el="faq.a4">Ναι! Διοργανώνουμε live βραδιές, parties και events. Ακολούθησέ μας στο Instagram για το πρόγραμμα.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-el="faq.q5">Πώς μπορώ να κλείσω τραπέζι;</button>
+          <div class="faq-a">
+            <p><span data-el="faq.a5">Κάλεσέ μας στο</span> <a href="tel:+302310888557">+30 2310 888557</a> <span data-el="faq.a5b">ή στείλε μήνυμα στο Instagram.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact reveal" id="contact">
+    <div class="container">
+      <h2 class="section-title" data-el="contact.title">Επικοινωνία</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-label" data-el="contact.address">Διεύθυνση</span>
+            <p>Λεωφ. Βασιλέως Γεωργίου 44, Θεσσαλονίκη 54640</p>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label" data-el="contact.phone">Τηλέφωνο</span>
+            <a href="tel:+302310888557">+30 2310 888557</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label" data-el="contact.hours">Ώρες</span>
+            <p data-el="contact.hours.detail">Καθημερινά: 09:00 – 05:00</p>
+          </div>
+          <div class="contact-social">
+            <a href="https://facebook.com/jamaicaskg" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12S0 5.446 0 12.073c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://instagram.com/jamaica_skg" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="contact-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6067.988417446886!2d22.9544533!3d40.6179847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a839fc25759b4f%3A0xe4a6a5b459e9a7f3!2sJamaica%20%CE%9D%CF%84%CE%B9%CF%83%CE%BA%CE%BF%CE%BA%CE%B1%CF%86%CE%B5%CE%BD%CE%B5%CE%AF%CE%BF!5e0!3m2!1sel!2sgr!4v1685000000000" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Jamaica Ντισκοκαφενείο</p>
+      <p data-el="footer.tagline">Το νέο σου στέκι στην πόλη!</p>
+      <p class="footer-credit">Made with <span class="heart">&hearts;</span> by <a href="https://hellenicdev.github.io?utm_source=clients&amp;utm_medium=referral&amp;utm_term=jamaica" target="_blank" rel="noopener">HellenicDev</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
