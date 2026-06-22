@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Φάτε Σκάστε — Grill & Steakhouse</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="demo-badge">DEMO</div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Φάτε Σκάστε</a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-el active">EL</span>
+        <span class="sep">|</span>
+        <span class="lang-en">EN</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+      <nav class="nav" id="nav">
+        <a href="#about" data-lang="nav_about">Ιστορία</a>
+        <a href="#dishes" data-lang="nav_dishes">Πιάτα</a>
+        <a href="#menu" data-lang="nav_menu">Μενού</a>
+        <a href="#locations" data-lang="nav_locations">Καταστήματα</a>
+        <a href="#gallery" data-lang="nav_gallery">Φωτογραφίες</a>
+        <a href="#contact" data-lang="nav_contact">Επικοινωνία</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-carousel">
+      <div class="hero-slide active" style="background-image: url('images/479980886_18393532591100371_7696456600198711285_n.jpeg')"></div>
+      <div class="hero-slide" style="background-image: url('images/46407201_1113840088774870_7125610593880375296_n.jpeg')"></div>
+      <div class="hero-slide" style="background-image: url('images/468285629_18381881038100371_8496733195576665605_n.jpeg')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="hero-pre" data-lang="hero_pre">Καλώς ήρθατε στο</p>
+        <h1 class="hero-title">Φάτε Σκάστε</h1>
+        <p class="hero-tagline" data-lang="hero_tagline">Grill & Steakhouse</p>
+        <p class="hero-sub" data-lang="hero_sub">Κρέατα στα κάρβουνα — απλά, αληθινά, απίστευτα νόστιμα</p>
+      </div>
+      <div class="hero-buttons">
+        <a href="#locations" class="btn btn-primary" data-lang="hero_btn1">Βρες μας</a>
+        <a href="#menu" class="btn btn-outline" data-lang="hero_btn2">Δες το μενού</a>
+        <a href="tel:2310869154" class="btn btn-ghost" data-lang="hero_btn3">2310 869 154</a>
+      </div>
+    </div>
+    <div class="hero-indicators">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <div class="scroll-hint" data-lang="scroll_hint">Κυλήστε</div>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title reveal" data-lang="about_title">Η Ιστορία μας</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p data-lang="about_p1">Το steakhouse «Φάτε Σκάστε» άνοιξε στη οδό Βασιλέως Γεωργίου 24 τον Ιανουάριο του 2016 και από τότε έχει κερδίσει το δικό του φανατικό κοινό, που το προτιμά τόσο για τις εξόδους του όσο και για τις παραγγελίες στο σπίτι ή το γραφείο.</p>
+          <p data-lang="about_p2">Οι μερίδες και τα σάντουιτς του, νόστιμα και πλούσια, σε κάνουν να θες να παραγγείλεις ξανά, ακόμα κι αν έχεις ήδη χορτάσει από την πρώτη παραγγελία. Γι' αυτό, όταν το 2019 άνοιξε το δεύτερο κατάστημα στο κέντρο της πόλης – σε ένα ιστορικό σημείο στα Λαδάδικα – δεν χρειάστηκε συστάσεις και έγινε αμέσως αγαπημένος προορισμός για τους λάτρεις του καλοψημένου κρέατος.</p>
+          <p data-lang="about_p3">Ο Στέργιος και η Λία δημιούργησαν το «Φάτε Σκάστε» θέλοντας να προσφέρουν στον κόσμο το καλύτερο κρέας, με πρώτες ύλες από Έλληνες παραγωγούς και προϊόντα που παρασκευάζονται καθημερινά και εξ ολοκλήρου στο κατάστημα, όπου ψήνονται αποκλειστικά στα κάρβουνα, για να έχουν τη γεύση που οι ίδιοι επιθυμούν.</p>
+          <p data-lang="about_p4">Κρέατα πρώτης ποιότητας ψήνονται – αποκλειστικά στα κάρβουνα – με μαεστρία και τα απολαμβάνουμε σε ένα απλό και άνετο περιβάλλον, που μυρίζει νοστιμιά, όπως ακριβώς πρέπει να μυρίζει ένα σοβαρό ψητοπωλείο.</p>
+        </div>
+        <div class="about-image reveal">
+          <div class="about-image-wrap">
+            <img src="images/488850941_1228059092658161_7277994471853003527_n.jpeg" alt="Φάτε Σκάστε">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Dishes -->
+  <section class="section dishes" id="dishes">
+    <div class="container">
+      <h2 class="section-title reveal" data-lang="dishes_title">Από την Κουζίνα μας</h2>
+      <p class="section-sub reveal" data-lang="dishes_sub">Μια γεύση από όσα ετοιμάζουμε καθημερινά με μεράκι</p>
+      <div class="dishes-grid">
+        <div class="dish-card reveal">
+          <div class="dish-img"><img src="images/85570aa0-177e-11eb-b0a2-ceeee2e331c2_______________1.jpeg" alt="" loading="lazy"></div>
+          <div class="dish-info">
+            <h3 data-lang="dish_1_title">Ψητά στα κάρβουνα</h3>
+            <p data-lang="dish_1_desc">Όλα τα πιάτα μας ψήνονται αποκλειστικά στα κάρβουνα, για αυθεντική γεύση</p>
+          </div>
+        </div>
+        <div class="dish-card reveal">
+          <div class="dish-img"><img src="images/902531aa-177e-11eb-aeae-b2ce8f41d439_______________2.jpeg" alt="" loading="lazy"></div>
+          <div class="dish-info">
+            <h3 data-lang="dish_2_title">Φρέσκες πρώτες ύλες</h3>
+            <p data-lang="dish_2_desc">Επιλέγουμε πρώτες ύλες από Έλληνες παραγωγούς για ανώτερη ποιότητα</p>
+          </div>
+        </div>
+        <div class="dish-card reveal">
+          <div class="dish-img"><img src="images/a3b87f42-177e-11eb-96d7-caf1f94df6d8_______________4.jpeg" alt="" loading="lazy"></div>
+          <div class="dish-info">
+            <h3 data-lang="dish_3_title">Μεράκι και τέχνη</h3>
+            <p data-lang="dish_3_desc">Κάθε πιάτο ετοιμάζεται με προσοχή, από έμπειρα χέρια, καθημερινά στο κατάστημα</p>
+          </div>
+        </div>
+        <div class="dish-card reveal">
+          <div class="dish-img"><img src="images/9f75b7f6-177e-11eb-b62b-965abcb18537_______________5.jpeg" alt="" loading="lazy"></div>
+          <div class="dish-info">
+            <h3 data-lang="dish_4_title">Ζουμερά και πλούσια</h3>
+            <p data-lang="dish_4_desc">Πλούσιες μερίδες που ικανοποιούν και τους πιο απαιτητικούς</p>
+          </div>
+        </div>
+        <div class="dish-card reveal">
+          <div class="dish-img"><img src="images/813e766e-177f-11eb-8d50-9a598a4c3463_______________12.jpeg" alt="" loading="lazy"></div>
+          <div class="dish-info">
+            <h3 data-lang="dish_5_title">Παραδοσιακές γεύσεις</h3>
+            <p data-lang="dish_5_desc">Σεβόμαστε την παράδοση, προσθέτοντας τη δική μας μοντέρνα πινελιά</p>
+          </div>
+        </div>
+        <div class="dish-card reveal">
+          <div class="dish-img"><img src="images/67ddbaed043b8c2329967d9f.jpeg" alt="" loading="lazy"></div>
+          <div class="dish-info">
+            <h3 data-lang="dish_6_title">Για κάθε στιγμή</h3>
+            <p data-lang="dish_6_desc">Στο μαγαζί, σε πακέτο, στο σπίτι ή στο γραφείο — όπου κι αν είσαι</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="section menu" id="menu">
+    <div class="container">
+      <h2 class="section-title reveal" data-lang="menu_title">Το Μενού μας</h2>
+      <p class="section-sub reveal" data-lang="menu_sub">Όλα ψήνονται αποκλειστικά στα κάρβουνα, με κρέατα πρώτης ποιότητας</p>
+      <div class="menu-grid">
+        <div class="menu-card reveal">
+          <div class="menu-icon">🔥</div>
+          <h3 data-lang="menu_1_title">Κοντός Σουβλιστός</h3>
+          <p data-lang="menu_1_desc">Κοτόπουλο και χοιρινό κοντόσουβλο, σε μερίδα με πατάτες και σαλάτα εποχής, σε αραβική πίτα, σε κλασικό ή club sandwich. Η υπογραφή μας.</p>
+        </div>
+        <div class="menu-card reveal">
+          <div class="menu-icon">🥙</div>
+          <h3 data-lang="menu_2_title">Σουβλάκι & Γύρος</h3>
+          <p data-lang="menu_2_desc">Χοιρινός γύρος, σουβλάκι, σπιτικές τηγανιτές πατάτες. Όλες οι κλασικές επιλογές με τη δική μας πινελιά.</p>
+        </div>
+        <div class="menu-card reveal">
+          <div class="menu-icon">🥩</div>
+          <h3 data-lang="menu_3_title">Ελασσονίτικο & Μπιφτέκια</h3>
+          <p data-lang="menu_3_desc">Χοιρινό ρολό τυλιγμένο σε κεφαλοτύρι, γεμιστό με πιπεριά, και ψητά μπιφτέκια σε αραβική πίτα με πανσέτα.</p>
+        </div>
+        <div class="menu-card reveal">
+          <div class="menu-icon">🥪</div>
+          <h3 data-lang="menu_4_title">Club & Σάντουιτς</h3>
+          <p data-lang="menu_4_desc">Μοναδικό club sandwich με μουστάρδα, ντομάτα, μαρούλι, κρεμμύδι και ψητή μπριζόλα στη σχάρα.</p>
+        </div>
+        <div class="menu-card reveal">
+          <div class="menu-icon">🥗</div>
+          <h3 data-lang="menu_5_title">Vegetarian</h3>
+          <p data-lang="menu_5_desc">Ελαφριά σάντουιτς με μανιτάρι και χαλούμι, φαλάφελ, λαχανικό burger και δροσερές σαλάτες.</p>
+        </div>
+        <div class="menu-card reveal">
+          <div class="menu-icon">🍖</div>
+          <h3 data-lang="menu_6_title">Πανσέτα & Λουκάνικα</h3>
+          <p data-lang="menu_6_desc">Πανσέτα, λουκάνικα, παϊδάκια — όλα ψημένα στα κάρβουνα, όπως πρέπει.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Locations -->
+  <section class="section locations" id="locations">
+    <div class="container">
+      <h2 class="section-title reveal" data-lang="locations_title">Καταστήματα</h2>
+      <div class="locations-grid">
+        <div class="location-card reveal">
+          <div class="loc-badge" data-lang="loc1_badge">Από το 2016</div>
+          <h3 data-lang="loc1_title">Βασιλέως Γεωργίου 24</h3>
+          <p class="loc-neighborhood" data-lang="loc1_sub">Κέντρο Θεσσαλονίκης</p>
+          <a href="tel:2310869154" class="phone">2310 869154</a>
+          <div class="loc-actions">
+            <a href="https://www.google.com/maps/dir//%CE%A6%CE%AC%CF%84%CE%B5+%CE%A3%CE%BA%CE%AC%CF%83%CF%84%CE%B5+%CE%92%CE%B1%CF%83%CE%B9%CE%BB%CE%AD%CF%89%CF%82+%CE%93%CE%B5%CF%89%CF%81%CE%B3%CE%AF%CE%BF%CF%85+24+%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7" target="_blank" class="btn btn-sm" data-lang="directions_btn">Οδηγίες</a>
+            <a href="tel:2310869154" class="btn btn-sm btn-outline">Καλέστε</a>
+          </div>
+        </div>
+        <div class="location-card reveal">
+          <div class="loc-badge" data-lang="loc2_badge">Από το 2019</div>
+          <h3 data-lang="loc2_title">Πολυτεχνείου 51, Λαδάδικα</h3>
+          <p class="loc-neighborhood" data-lang="loc2_sub">Ιστορικό κέντρο</p>
+          <a href="tel:2310522733" class="phone">2310 522733</a>
+          <div class="loc-actions">
+            <a href="https://www.google.com/maps/dir//%CE%A6%CE%AC%CF%84%CE%B5+%CE%A3%CE%BA%CE%AC%CF%83%CF%84%CE%B5+%CE%A0%CE%BF%CE%BB%CF%85%CF%84%CE%B5%CF%87%CE%BD%CE%AF%CE%BF%CF%85+51+%CE%9B%CE%B1%CE%B4%CE%AC%CE%B4%CE%B9%CE%BA%CE%B1+%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7" target="_blank" class="btn btn-sm" data-lang="directions_btn">Οδηγίες</a>
+            <a href="tel:2310522733" class="btn btn-sm btn-outline">Καλέστε</a>
+          </div>
+        </div>
+      </div>
+      <div class="map-section reveal">
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d400.7426133784876!2d22.9539943!3d40.6199938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a838e2708ce59f%3A0x208a962a5320ff45!2zzqDOv8OkzrXOt863IM6xzrXPgc6xz4I!5e0!3m2!1sel!2sgr!4v1718900000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <h2 class="section-title reveal" data-lang="gallery_title">Φωτογραφίες</h2>
+      <p class="section-sub reveal" data-lang="gallery_sub">Ρίξτε μια ματιά στο χώρο και τα πιάτα μας</p>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item reveal"><img src="images/468285629_18381881038100371_8496733195576665605_n.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/468288626_18381881053100371_5389698435084319597_n.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/67ddbaed043b8c2329967d9f.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/67ddea42149a6079e5cec33f.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/680bf8876f972db77b4d307c.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/85570aa0-177e-11eb-b0a2-ceeee2e331c2_______________1.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/902531aa-177e-11eb-aeae-b2ce8f41d439_______________2.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/a3b87f42-177e-11eb-96d7-caf1f94df6d8_______________4.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/9f75b7f6-177e-11eb-b62b-965abcb18537_______________5.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/813e766e-177f-11eb-8d50-9a598a4c3463_______________12.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/a3d1af02-177f-11eb-b456-62d5f37988ed_______________14.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/ccab2a48-177f-11eb-bdb8-e2ba5c94a97e_______________17.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/d24a092e-177f-11eb-a06a-d6584852450f_______________18.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/de9e474e-177f-11eb-89ca-1a04d6c166a1_______________19.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/f0c9ce66-177f-11eb-a804-9aa161e55cd0_______________20.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/ea93602a-177f-11eb-b5bf-92570a852fad_______________21.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/28355230-1780-11eb-b9e1-f6b67d2ff367_______________24.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/382e2dc4-1780-11eb-91ac-b6fac3bb3fec_______________25.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/2e866940-177f-11eb-8d3f-ceeee2e331c2_______________50.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/237df09a-177f-11eb-a933-f67aca83255e_______________51.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/0f7b3c6a-177f-11eb-ab32-965abcb18537_______________53.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/f8c1b012-177e-11eb-af98-9651028053de_______________54.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/034997de-177f-11eb-b211-f67aca83255e_______________55.jpeg" alt="" loading="lazy"></div>
+        <div class="gallery-item reveal"><img src="images/1d22722a-177f-11eb-9a54-06508a96d549_______________56.jpeg" alt="" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <button class="lightbox-arrow lightbox-prev" id="lightboxPrev">&#10094;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <button class="lightbox-arrow lightbox-next" id="lightboxNext">&#10095;</button>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+  </div>
+
+  <!-- Contact / Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-brand reveal">
+        <h3>Φάτε Σκάστε</h3>
+        <p data-lang="footer_tag">Grill & Steakhouse — Αποκλειστικά στα κάρβουνα</p>
+        <p class="footer-desc" data-lang="footer_desc">Κρέατα πρώτης ποιότητας από Έλληνες παραγωγούς, ψημένα αποκλειστικά στα κάρβουνα. Από το 2016 στο κέντρο της Θεσσαλονίκης.</p>
+      </div>
+      <div class="footer-links reveal">
+        <h4 data-lang="footer_links_title">Πλοήγηση</h4>
+        <a href="#about" data-lang="nav_about">Ιστορία</a>
+        <a href="#menu" data-lang="nav_menu">Μενού</a>
+        <a href="#gallery" data-lang="nav_gallery">Φωτογραφίες</a>
+      </div>
+      <div class="footer-contact reveal">
+        <h4 data-lang="footer_contact_title">Επικοινωνία</h4>
+        <a href="tel:2310869154">2310 869154</a>
+        <a href="tel:2310522733">2310 522733</a>
+        <p class="footer-addr" data-lang="footer_addr">Βασ. Γεωργίου 24 &amp; Πολυτεχνείου 51</p>
+      </div>
+    </div>
+    <div class="footer-social reveal">
+      <div class="container">
+        <div class="social-links">
+          <a href="https://www.instagram.com/fate_skaste/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17" cy="7" r="1.5"/></svg>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.facebook.com/people/%CE%A6%CE%AC%CF%84%CE%B5-%CE%A3%CE%BA%CE%B1%CF%83%CF%84%CE%B5/100063622447878/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            <span>Facebook</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p data-lang="footer_copy">&copy; 2026 Φάτε Σκάστε. Μεράκι και κάρβουνο.</p>
+        <p class="footer-credit">Made with <span class="heart">&hearts;</span> by <a href="https://hellenicdev.github.io?utm_source=clients&amp;utm_medium=referral&amp;utm_term=fate-skaste" target="_blank" rel="noopener">HellenicDev</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
