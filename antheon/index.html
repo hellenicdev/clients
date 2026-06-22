@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ουζερί Ανθέων | Αυθεντικό Ουζερί στη Θεσσαλονίκη από το 1982</title>
+<meta name="description" content="Ουζερί Ανθέων - Αυθεντικό ουζερί στη Θεσσαλονίκη από το 1982. Φρέσκα ψάρια, θαλασσινά, παραδοσιακοί μεζέδες στην οδό Βαφοπούλου 7.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FWQFZME3Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9FWQFZME3Z');
+  </script>
+<style>
+:root {
+  --bg: #faf8f5;
+  --text: #1a1a1a;
+  --text-light: #6b6b6b;
+  --accent: #c49a6c;
+  --accent-dark: #a67c4e;
+  --border: #e8e0d5;
+  --card-bg: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn { to { opacity: 1; } }
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a { color: inherit; text-decoration: none; }
+
+img { max-width: 100%; height: auto; display: block; }
+
+/* Nav */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(250, 248, 245, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+  transition: transform 0.3s;
+}
+
+.nav-hidden { transform: translateY(-100%); }
+
+nav .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+nav .logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+nav .logo span { color: var(--accent); }
+
+nav .nav-links { display: flex; gap: 24px; align-items: center; }
+
+nav .nav-links a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-light);
+  transition: color 0.2s;
+  position: relative;
+}
+
+nav .nav-links a:hover { color: var(--text); }
+
+nav .nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s;
+}
+
+nav .nav-links a:hover::after { width: 100%; }
+
+.lang-toggle {
+  background: none;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.lang-toggle:hover { background: var(--accent); color: white; }
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text);
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Hero */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 24px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 8s ease;
+}
+
+.hero:hover .hero-bg img,
+.hero-inview .hero-bg img { transform: scale(1.05); }
+
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  color: white;
+}
+
+.hero .year {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  margin-bottom: 16px;
+  font-weight: 600;
+  opacity: 0;
+  animation: slideUp 0.8s ease 0.2s forwards;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  margin-bottom: 12px;
+  letter-spacing: -0.03em;
+  color: white;
+  opacity: 0;
+  animation: slideUp 0.8s ease 0.4s forwards;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero .subtitle {
+  font-size: 1.15rem;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 8px;
+  opacity: 0;
+  animation: slideUp 0.8s ease 0.6s forwards;
+}
+
+.hero .tagline {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 40px;
+  font-style: italic;
+  opacity: 0;
+  animation: slideUp 0.8s ease 0.8s forwards;
+}
+
+.hero .btn-group {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: slideUp 0.8s ease 1s forwards;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border-radius: 100px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: white;
+  color: var(--text);
+}
+
+.btn-primary:hover { background: var(--accent); color: white; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+
+.btn-outline-light {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.5);
+  color: white;
+}
+
+.btn-outline-light:hover { background: white; color: var(--text); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+
+/* Section */
+section { padding: 100px 24px; }
+
+.section-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  margin-bottom: 16px;
+}
+
+.section-desc {
+  color: var(--text-light);
+  max-width: 600px;
+  font-size: 1.05rem;
+}
+
+.container { max-width: 1100px; margin: 0 auto; }
+
+/* Reveal animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* About */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+  margin-top: 48px;
+}
+
+.about-image {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: transform 0.4s;
+}
+
+.about-image:hover { transform: scale(1.01); }
+
+.about-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 6s ease;
+}
+
+.about-image:hover img { transform: scale(1.05); }
+
+.about-text p {
+  color: var(--text-light);
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.about-stats .stat {
+  text-align: center;
+  padding: 24px 12px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-stats .stat:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+}
+
+.about-stats .stat .number {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.about-stats .stat .label {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  margin-top: 4px;
+}
+
+/* Specialties */
+.specials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.special-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.special-card:nth-child(1) { transition-delay: 0.1s; }
+.special-card:nth-child(2) { transition-delay: 0.2s; }
+.special-card:nth-child(3) { transition-delay: 0.3s; }
+.special-card:nth-child(4) { transition-delay: 0.4s; }
+
+.special-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.06);
+  border-color: var(--accent);
+}
+
+.special-card .icon-img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 12px;
+  transition: transform 0.5s;
+}
+
+.special-card:hover .icon-img { transform: rotate(8deg) scale(1.08); }
+
+.special-card h4 { font-size: 1.1rem; margin-bottom: 6px; }
+.special-card p { font-size: 0.85rem; color: var(--text-light); }
+
+/* Gallery */
+.gallery-section { background: var(--card-bg); border-top: 1px solid var(--border); }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s, box-shadow 0.5s;
+  cursor: pointer;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+}
+
+/* Menu */
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 48px;
+}
+
+.menu-category { margin-bottom: 32px; }
+
+.menu-category h3 {
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px dotted var(--border);
+  transition: background 0.2s;
+  cursor: default;
+}
+
+.menu-item:hover { background: rgba(196, 154, 108, 0.05); padding-left: 8px; padding-right: 8px; margin: 0 -8px; border-radius: 6px; }
+
+.menu-item-name { font-weight: 500; font-size: 0.95rem; flex: 1; }
+.menu-item-desc { font-size: 0.8rem; color: var(--text-light); margin-top: 2px; }
+
+.menu-item-price {
+  font-weight: 600;
+  color: var(--accent-dark);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  margin-left: 16px;
+}
+
+/* Reviews */
+.reviews-section { background: #fff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.review-card {
+  background: var(--bg);
+  border-radius: 12px;
+  padding: 28px;
+  border: 1px solid var(--border);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+}
+
+.review-card .stars { color: var(--accent); font-size: 0.85rem; margin-bottom: 8px; letter-spacing: 2px; }
+
+.review-card blockquote {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-style: italic;
+  line-height: 1.7;
+}
+
+.review-card .author { font-size: 0.8rem; font-weight: 500; margin-top: 12px; color: var(--text); }
+.review-card .source { font-size: 0.7rem; color: var(--text-light); }
+
+.review-cta { text-align: center; margin-top: 48px; }
+.review-cta p { color: var(--text-light); margin-bottom: 16px; font-size: 0.9rem; }
+
+/* Contact */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 48px;
+}
+
+.contact-info h3 { font-size: 1.3rem; margin-bottom: 8px; }
+
+.contact-info .address {
+  color: var(--text-light);
+  margin-bottom: 24px;
+  line-height: 1.8;
+}
+
+.contact-info .address a { color: var(--accent-dark); }
+
+.contact-detail { margin-bottom: 16px; }
+.contact-detail .label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); font-weight: 600; }
+.contact-detail .value { font-size: 1rem; margin-top: 2px; }
+.contact-detail .value a { color: var(--accent-dark); }
+
+.hours-table { margin-top: 24px; }
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+.hours-row .day { font-weight: 500; }
+.hours-row .time { color: var(--text-light); }
+.hours-row.closed .time { color: #c0392b; }
+
+.map-container {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  border: 0;
+}
+
+/* Social */
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: serif;
+}
+
+.social-links a:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px 24px;
+  color: var(--text-light);
+  font-size: 0.8rem;
+  border-top: 1px solid var(--border);
+}
+
+footer span { color: var(--accent); }
+
+.demo-badge {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  background: #e74c3c;
+  color: #fff;
+  font: 700 13px/1 'Inter', sans-serif;
+  padding: 6px 16px;
+  border-radius: 4px;
+  letter-spacing: 2px;
+  box-shadow: 0 2px 12px rgba(231,76,60,0.4);
+  pointer-events: none;
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  z-index: 200;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  animation: lbFade 0.3s ease;
+}
+
+@keyframes lbFade { from { opacity: 0; } to { opacity: 1; } }
+
+.lightbox.open { display: flex; }
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 12px;
+  object-fit: contain;
+  animation: lbScale 0.3s ease;
+}
+
+@keyframes lbScale { from { transform: scale(0.9); } to { transform: scale(1); } }
+
+.lightbox .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.lightbox .close-btn:hover { opacity: 1; }
+
+/* Back to top */
+.back-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--text);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  z-index: 90;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.back-top.show { opacity: 1; pointer-events: auto; }
+
+.back-top:hover { background: var(--accent); transform: translateY(-3px); }
+
+/* Mobile CTA */
+.mobile-cta {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 1px solid var(--border);
+  padding: 12px 20px;
+  z-index: 90;
+  gap: 12px;
+}
+
+.mobile-cta .btn { flex: 1; justify-content: center; font-size: 0.85rem; padding: 12px 16px; }
+
+/* Language visibility handled by JS */
+
+/* Mobile */
+@media (max-width: 768px) {
+  nav .nav-links { display: none; }
+  .nav-toggle { display: block; }
+  nav .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: rgba(250, 248, 245, 0.98);
+    padding: 24px;
+    border-bottom: 1px solid var(--border);
+    gap: 16px;
+  }
+  nav .nav-links.open a { font-size: 1rem; }
+  nav .nav-links.open a::after { display: none; }
+  .lang-toggle { align-self: flex-start; }
+
+  .hero h1 { font-size: 2.5rem; }
+  .section-title { font-size: 1.8rem; }
+  .about-grid,
+  .menu-grid,
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .about-stats { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .about-stats .stat { padding: 16px 8px; }
+  .about-stats .stat .number { font-size: 1.5rem; }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-grid img { height: 160px; }
+  section { padding: 60px 20px; }
+  .hero { min-height: 90vh; padding: 100px 20px 60px; }
+  .about-image img { height: 280px; }
+  .lightbox { padding: 20px; }
+  .mobile-cta { display: flex; }
+  .back-top { bottom: 80px; right: 16px; }
+  footer { padding-bottom: 80px; }
+}
+</style>
+</head>
+<body>
+
+<div class="demo-badge">DEMO</div>
+
+<nav id="navbar">
+  <div class="container">
+    <a href="#" class="logo" data-lang="el">Ανθέων <span>•</span></a>
+    <a href="#" class="logo" data-lang="en">Antheon <span>•</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about" data-lang="el">Ιστορία</a>
+      <a href="#about" data-lang="en">About</a>
+      <a href="#gallery" data-lang="el">Φωτογραφίες</a>
+      <a href="#gallery" data-lang="en">Gallery</a>
+      <a href="#menu" data-lang="el">Μενού</a>
+      <a href="#menu" data-lang="en">Menu</a>
+      <a href="#reviews" data-lang="el">Κριτικές</a>
+      <a href="#reviews" data-lang="en">Reviews</a>
+      <a href="#contact" data-lang="el">Επικοινωνία</a>
+      <a href="#contact" data-lang="en">Contact</a>
+      <button class="lang-toggle" id="langToggle" onclick="toggleLang()">EN</button>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Μενού">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header class="hero" id="hero">
+  <div class="hero-bg">
+    <img src="images/interior.jpg" alt="Ουζερί Ανθέων εσωτερικός χώρος">
+  </div>
+  <div class="hero-content">
+    <p class="year" data-lang="el">Από το 1982</p>
+    <p class="year" data-lang="en">Since 1982</p>
+    <h1 data-lang="el">Ουζερί Ανθέων</h1>
+    <h1 data-lang="en">Ouzeri Antheon</h1>
+    <p class="subtitle" data-lang="el">Βαφοπούλου 7, Θεσσαλονίκη</p>
+    <p class="subtitle" data-lang="en">Vafopoulou 7, Thessaloniki</p>
+    <p class="tagline" data-lang="el">Φρέσκα ψάρια, θαλασσινά & παραδοσιακοί μεζέδες</p>
+    <p class="tagline" data-lang="en">Fresh fish, seafood & traditional mezedes</p>
+    <div class="btn-group">
+      <a href="#menu" class="btn btn-primary" data-lang="el">Δείτε το Μενού</a>
+      <a href="#menu" class="btn btn-primary" data-lang="en">See our Menu</a>
+      <a href="tel:+302310429375" class="btn btn-outline-light">📞 2310 429 375</a>
+    </div>
+  </div>
+</header>
+
+<!-- About -->
+<section id="about">
+  <div class="container">
+    <p class="section-label" data-lang="el">Ιστορία</p>
+    <p class="section-label" data-lang="en">Our Story</p>
+    <h2 class="section-title reveal" data-lang="el">Ένα αυθεντικό ουζερί στην καρδιά της Θεσσαλονίκης</h2>
+    <h2 class="section-title reveal" data-lang="en">An authentic ouzeri in the heart of Thessaloniki</h2>
+    <p class="section-desc reveal" data-lang="el">Από το 1982, το Ουζερί Ανθέων σερβίρει φρέσκα ψάρια, θαλασσινά και παραδοσιακούς μεζέδες στην όμορφη οδό Βαφοπούλου, κάτω από τα πλατάνια.</p>
+    <p class="section-desc reveal" data-lang="en">Since 1982, Ouzeri Antheon has been serving fresh fish, seafood and traditional mezedes on beautiful Vafopoulou street, under the plane trees.</p>
+
+    <div class="about-grid">
+      <div class="reveal-left">
+        <div class="about-image">
+          <img src="images/exterior.jpg" alt="Εξωτερικός χώρος Ουζερί Ανθέων">
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <div class="number" data-count="43">0</div>
+            <div class="label" data-lang="el">Χρόνια λειτουργίας</div>
+            <div class="label" data-lang="en">Years of service</div>
+          </div>
+          <div class="stat">
+            <div class="number" data-count="47" data-type="rating">0</div>
+            <div class="label" data-lang="el">Βαθμολογία TripAdvisor</div>
+            <div class="label" data-lang="en">TripAdvisor rating</div>
+          </div>
+          <div class="stat">
+            <div class="number" data-count="185">0</div>
+            <div class="label" data-lang="el">Θέση στη Θεσσαλονίκη</div>
+            <div class="label" data-lang="en">Rank in Thessaloniki</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="about-text">
+          <p data-lang="el">Το Ουζερί Ανθέων βρίσκεται σε έναν από τους πιο όμορφους, πράσινους δρόμους της Θεσσαλονίκης. Με τραπεζάκια έξω κάτω από τα μεγάλα πλατάνια, αποτελεί ιδανικό προορισμό για όλες τις εποχές.</p>
+          <p data-lang="en">Ouzeri Antheon is located on one of the most beautiful, green streets of Thessaloniki. With outdoor tables under the large plane trees, it is an ideal destination for all seasons.</p>
+          <p data-lang="el">Ειδικευόμαστε στα φρέσκα ψάρια και τους θαλασσινούς μεζέδες, με τον περίφημο <strong>μπακαλιάρο σκορδαλιά</strong> να αποτελεί την υπογραφή μας. Όλες οι πρώτες ύλες είναι επιλεγμένες με προσοχή, οι σαλάτες φρέσκες και τα ψάρια ημέρας.</p>
+          <p data-lang="en">We specialize in fresh fish and seafood mezedes, with our famous <strong>batter-fried cod with garlic dip (bakaliaros skordalia)</strong> being our signature dish. All ingredients are carefully selected, salads are fresh, and fish is daily caught.</p>
+          <p data-lang="el">Το μαγαζί διατηρεί τον παραδοσιακό, ζεστό χαρακτήρα του και εξυπηρετεί με ευγένεια και ταχύτητα, κερνώντας πάντα ένα γλυκό στο τέλος.</p>
+          <p data-lang="en">The tavern keeps its traditional, warm character and serves with kindness and speed, always offering a complimentary dessert at the end.</p>
+        </div>
+
+        <div class="specials-grid">
+          <div class="special-card reveal" style="transition-delay:0.1s">
+            <img src="images/gallery3.jpg" alt="Μπακαλιάρος σκορδαλιά" class="icon-img">
+            <h4 data-lang="el">Μπακαλιάρος Σκορδαλιά</h4>
+            <h4 data-lang="en">Cod with Garlic Dip</h4>
+            <p data-lang="el">Η σπεσιαλιτέ μας — τραγανός μπακαλιάρος με βελούδινη σκορδαλιά</p>
+            <p data-lang="en">Our specialty — crispy batter-fried cod with smooth garlic dip</p>
+          </div>
+          <div class="special-card reveal" style="transition-delay:0.2s">
+            <img src="images/gallery4.jpg" alt="Φρέσκα ψάρια" class="icon-img">
+            <h4 data-lang="el">Φρέσκα Ψάρια & Θαλασσινά</h4>
+            <h4 data-lang="en">Fresh Fish & Seafood</h4>
+            <p data-lang="el">Φαγγρί, λαβράκι, τσιπούρα, γαρίδες, μύδια, χταπόδι, καλαμάρι</p>
+            <p data-lang="en">Sea bream, sea bass, gilt-head bream, shrimp, mussels, octopus, squid</p>
+          </div>
+          <div class="special-card reveal" style="transition-delay:0.3s">
+            <img src="images/gallery5.jpg" alt="Παραδοσιακοί μεζέδες" class="icon-img">
+            <h4 data-lang="el">Παραδοσιακοί Μεζέδες</h4>
+            <h4 data-lang="en">Traditional Mezedes</h4>
+            <p data-lang="el">Φάβα, μελιτζανοσαλάτα, ντολμαδάκια, κολοκυθάκια τηγανητά</p>
+            <p data-lang="en">Fava, eggplant dip, stuffed vine leaves, fried zucchini</p>
+          </div>
+          <div class="special-card reveal" style="transition-delay:0.4s">
+            <img src="images/gallery10.jpg" alt="Κρεατικά" class="icon-img">
+            <h4 data-lang="el">Κρεατικά</h4>
+            <h4 data-lang="en">Grilled Meats</h4>
+            <p data-lang="el">Μπιφτέκι, ψαρονέφρι, σουβλάκια, σουτζουκάκια, κοτόπουλο</p>
+            <p data-lang="en">Burger, pork tenderloin, skewers, spicy meatballs, chicken</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="gallery-section">
+  <div class="container">
+    <p class="section-label" data-lang="el">Φωτογραφίες</p>
+    <p class="section-label" data-lang="en">Gallery</p>
+    <h2 class="section-title reveal" data-lang="el">Το μαγαζί & οι γεύσεις μας</h2>
+    <h2 class="section-title reveal" data-lang="en">Our tavern & our flavors</h2>
+    <p class="section-desc reveal" data-lang="el">Πραγματικές φωτογραφίες από τον χώρο, το φαγητό και τη μοναδική ατμόσφαιρα του Ουζερί Ανθέων.</p>
+    <p class="section-desc reveal" data-lang="en">Real photos from the space, the food and the unique atmosphere of Ouzeri Antheon.</p>
+
+    <div class="gallery-grid">
+      <img src="images/gallery1.jpg" alt="Εξωτερικός χώρος Ουζερί Ανθέων" onclick="openLightbox(this.src)" loading="lazy">
+      <img src="images/gallery2.jpg" alt="Εσωτερικός χώρος Ουζερί Ανθέων" onclick="openLightbox(this.src)" loading="lazy">
+      <img src="images/gallery3.jpg" alt="Μπακαλιάρος σκορδαλιά" onclick="openLightbox(this.src)" loading="lazy">
+      <img src="images/gallery4.jpg" alt="Λαβράκι ψητό" onclick="openLightbox(this.src)" loading="lazy">
+      <img src="images/gallery5.jpg" alt="Κολοκυθάκια τηγανητά" onclick="openLightbox(this.src)" loading="lazy">
+      <img src="images/gallery6.jpg" alt="Φάβα" onclick="openLightbox(this.src)" loading="lazy">
+      <img src="images/gallery7.jpg" alt="Ντολμαδάκια" onclick="openLightbox(this.src)" loading="lazy">
+      <img src="images/gallery8.jpg" alt="Καλαμαράκια τηγανητά" onclick="openLightbox(this.src)" loading="lazy">
+      <img src="images/gallery9.jpg" alt="Κεφαλοτύρι σαγανάκι" onclick="openLightbox(this.src)" loading="lazy">
+      <img src="images/gallery10.jpg" alt="Καλαμαράκια σχάρας" onclick="openLightbox(this.src)" loading="lazy">
+      <img src="images/gallery11.jpg" alt="Μελιτζανοσαλάτα" onclick="openLightbox(this.src)" loading="lazy">
+      <img src="images/gallery12.jpg" alt="Σαρδέλες" onclick="openLightbox(this.src)" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- Menu -->
+<section id="menu" style="background: var(--card-bg); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="container">
+    <p class="section-label" data-lang="el">Μενού</p>
+    <p class="section-label" data-lang="en">Menu</p>
+    <h2 class="section-title reveal" data-lang="el">Ενδεικτική Γεύση</h2>
+    <h2 class="section-title reveal" data-lang="en">A Taste of Our Menu</h2>
+    <p class="section-desc reveal" data-lang="el">Ο κατάλογός μας αλλάζει με την εποχή και τη φρεσκάδα της ημέρας. Παρακάτω μερικές από τις αγαπημένες επιλογές των πελατών μας.</p>
+    <p class="section-desc reveal" data-lang="en">Our menu changes with the season and the freshness of the day. Below are some of our customers' favorite choices.</p>
+
+    <div class="menu-grid">
+      <div>
+        <div class="menu-category">
+          <h3 data-lang="el">Ορεκτικά & Σαλάτες</h3>
+          <h3 data-lang="en">Starters & Salads</h3>
+          <div class="menu-item">
+            <div><div class="menu-item-name">Φάβα</div><div class="menu-item-desc" data-lang="el">με κάπαρη και κρεμμύδι</div><div class="menu-item-desc" data-lang="en">with capers and onion</div></div>
+            <span class="menu-item-price">5.50€</span>
+          </div>
+          <div class="menu-item">
+            <div><div class="menu-item-name">Μελιτζανοσαλάτα</div><div class="menu-item-desc" data-lang="el">ψητή μελιτζάνα, σκόρδο, λάδι</div><div class="menu-item-desc" data-lang="en">roasted eggplant, garlic, olive oil</div></div>
+            <span class="menu-item-price">5.50€</span>
+          </div>
+          <div class="menu-item">
+            <div><div class="menu-item-name">Ντολμαδάκια</div><div class="menu-item-desc" data-lang="el">γιαλαντζί, με ρύζι και μυρωδικά</div><div class="menu-item-desc" data-lang="en">rice-stuffed vine leaves with herbs</div></div>
+            <span class="menu-item-price">6.00€</span>
+          </div>
+          <div class="menu-item">
+            <div><div class="menu-item-name" data-lang="el">Κολοκυθάκια τηγανητά</div><div class="menu-item-name" data-lang="en">Fried zucchini</div><div class="menu-item-desc" data-lang="el">τραγανά, ελαφριά</div><div class="menu-item-desc" data-lang="en">crispy, light</div></div>
+            <span class="menu-item-price">5.50€</span>
+          </div>
+          <div class="menu-item">
+            <div><div class="menu-item-name" data-lang="el">Χωριάτικη σαλάτα</div><div class="menu-item-name" data-lang="en">Greek salad</div><div class="menu-item-desc" data-lang="el">φρέσκια ντομάτα, αγγούρι, φέτα, ελιές</div><div class="menu-item-desc" data-lang="en">tomato, cucumber, feta, olives</div></div>
+            <span class="menu-item-price">7.00€</span>
+          </div>
+          <div class="menu-item">
+            <div><div class="menu-item-name" data-lang="el">Χόρτα βραστά</div><div class="menu-item-name" data-lang="en">Boiled greens</div><div class="menu-item-desc" data-lang="el">με λάδι και λεμόνι</div><div class="menu-item-desc" data-lang="en">with olive oil and lemon</div></div>
+            <span class="menu-item-price">5.50€</span>
+          </div>
+          <div class="menu-item">
+            <div><div class="menu-item-name" data-lang="el">Μανιτάρια ψητά</div><div class="menu-item-name" data-lang="en">Grilled mushrooms</div><div class="menu-item-desc" data-lang="el">με λάδι, ρίγανη</div><div class="menu-item-desc" data-lang="en">with oil, oregano</div></div>
+            <span class="menu-item-price">6.00€</span>
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <h3 data-lang="el">Θαλασσινά</h3>
+          <h3 data-lang="en">Seafood</h3>
+          <div class="menu-item">
+            <div><div class="menu-item-name" data-lang="el">Γαύρος μαρινάτος</div><div class="menu-item-name" data-lang="en">Marinated anchovies</div></div>
+            <span class="menu-item-price">6.50€</span>
+          </div>
+          <div class="menu-item">
+            <div><div class="menu-item-name" data-lang="el">Καλαμάρι σχάρας</div><div class="menu-item-name" data-lang="en">Grilled squid</div><div class="menu-item-desc" data-lang="el">φρέσκο, ψημένο στα κάρβουνα</div><div class="menu-item-desc" data-lang="en">fresh, grilled over charcoal</div></div>
+            <span class="menu-item-price">8.50€</span>
+          </div>
+          <div class="menu-item">
+            <div><div class="menu-item-name" data-lang="el">Χταπόδι σχάρας</div><div class="menu-item-name" data-lang="en">Grilled octopus</div></div>
+            <span class="menu-item-price">9.50€</span>
+          </div>
+          <div class="menu-item">
+            <div><div class="menu-item-name" data-lang="el">Μύδια σαγανάκι</div><div class="menu-item-name" data-lang="en">Mussels saganaki</div><div class="menu-item-desc" data-lang="el">με φέτα, πιπεριά</div><div class="menu-item-desc" data-lang="en">with feta, pepper</div></div>
+            <span class="menu-item-price">7.50€</span>
+          </div>
+          <div class="menu-item">
+            <div><div class="menu-item-name" data-lang="el">Σκουμπρί καπνιστό</div><div class="menu-item-name" data-lang="en">Smoked mackerel</div></div>
+            <span class="menu-item-price">7.50€</span>
+          </div>
+          <div class="menu-item">
+            <div><div class="menu-item-name" data-lang="el">Σαρδέλες σχάρας</div><div class="menu-item-name" data-lang="en">Grilled sardines</div></div>
+            <span class="menu-item-price">6.50€</span>
+          </div>
+          <div class="menu-item">
+            <div><div class="menu-item-name" data-lang="el">Γαλέος σαγανάκι</div><div class="menu-item-name" data-lang="en">Dogfish saganaki</div></div>
+            <span class="menu-item-price">7.50€</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="menu-category">
+          <h3 data-lang="el">Ψάρια Ημέρας</h3>
+          <h3 data-lang="en">Fresh Fish of the Day</h3>
+          <div class="menu-item">
+            <div><div class="menu-item-name">Φαγγρί</div><div class="menu-item-desc" data-lang="el">ψητό, με λαδολέμονο</div><div class="menu-item-desc" data-lang="en">grilled, with lemon-olive oil</div></div>
+            <span class="menu-item-price">35€/kg</span>
+          </div>
+          <div class="menu-item"><div><div class="menu-item-name">Λαβράκι</div></div><span class="menu-item-price">35€/kg</span></div>
+          <div class="menu-item"><div><div class="menu-item-name">Τσιπούρα</div></div><span class="menu-item-price">35€/kg</span></div>
+          <div class="menu-item">
+            <div><div class="menu-item-name" data-lang="el">Μπακαλιάρος τηγανητός</div><div class="menu-item-name" data-lang="en">Battered cod</div><div class="menu-item-desc" data-lang="el">με σκορδαλιά — η σπεσιαλιτέ μας</div><div class="menu-item-desc" data-lang="en">with garlic dip — our signature</div></div>
+            <span class="menu-item-price">8.50€</span>
+          </div>
+          <div class="menu-item"><div><div class="menu-item-name">Κουτσομούρες</div></div><span class="menu-item-price">7.00€</span></div>
+          <div class="menu-item"><div><div class="menu-item-name" data-lang="el">Μπακαλιαράκια τηγανητά</div><div class="menu-item-name" data-lang="en">Fried baby cod</div></div><span class="menu-item-price">7.00€</span></div>
+        </div>
+
+        <div class="menu-category">
+          <h3 data-lang="el">Κρεατικά</h3>
+          <h3 data-lang="en">Grilled Meats</h3>
+          <div class="menu-item"><div><div class="menu-item-name">Μπιφτέκι</div><div class="menu-item-desc" data-lang="el">στα κάρβουνα</div><div class="menu-item-desc" data-lang="en">charcoal-grilled</div></div><span class="menu-item-price">7.50€</span></div>
+          <div class="menu-item"><div><div class="menu-item-name">Ψαρονέφρι</div><div class="menu-item-desc" data-lang="el">ψητό, με μυρωδικά</div><div class="menu-item-desc" data-lang="en">grilled with herbs</div></div><span class="menu-item-price">8.50€</span></div>
+          <div class="menu-item"><div><div class="menu-item-name">Σουβλάκια</div></div><span class="menu-item-price">7.50€</span></div>
+          <div class="menu-item"><div><div class="menu-item-name">Πανσέτα</div></div><span class="menu-item-price">7.50€</span></div>
+          <div class="menu-item"><div><div class="menu-item-name">Λουκάνικο</div></div><span class="menu-item-price">6.50€</span></div>
+        </div>
+
+        <div class="menu-category">
+          <h3 data-lang="el">Ποτά</h3>
+          <h3 data-lang="en">Drinks</h3>
+          <div class="menu-item"><div><div class="menu-item-name">Τσίπουρο</div></div><span class="menu-item-price">4.70€</span></div>
+          <div class="menu-item"><div><div class="menu-item-name">Ούζο</div></div><span class="menu-item-price">4.50€</span></div>
+          <div class="menu-item"><div><div class="menu-item-name" data-lang="el">Κρασί χύμα (λευκό/κόκκινο)</div><div class="menu-item-name" data-lang="en">House wine (white/red)</div></div><span class="menu-item-price">4.80€</span></div>
+          <div class="menu-item"><div><div class="menu-item-name">Μπύρα</div></div><span class="menu-item-price">4.00€</span></div>
+        </div>
+      </div>
+    </div>
+
+    <p style="text-align: center; margin-top: 40px; color: var(--text-light); font-size: 0.85rem; font-style: italic;">
+      <span data-lang="el">* Οι τιμές είναι ενδεικτικές και ενδέχεται να διαφέρουν. Για το πλήρες μενού, επισκεφθείτε μας ή καλέστε μας.</span>
+      <span data-lang="en">* Prices are indicative and may vary. For the full menu, visit us or call us.</span>
+    </p>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section id="reviews" class="reviews-section">
+  <div class="container">
+    <p class="section-label" data-lang="el">Κριτικές</p>
+    <p class="section-label" data-lang="en">Reviews</p>
+    <h2 class="section-title reveal" data-lang="el">Τι λένε οι πελάτες μας</h2>
+    <h2 class="section-title reveal" data-lang="en">What our customers say</h2>
+    <p class="section-desc reveal" data-lang="el">Με 4.7 αστέρια στο TripAdvisor και πλήθος φανατικών θαμώνων, η γνώμη τους μετράει.</p>
+    <p class="section-desc reveal" data-lang="en">With 4.7 stars on TripAdvisor and many loyal regulars, their opinion matters.</p>
+
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote data-lang="el">"Εξαιρετικά φαγητά, ποιοτικά. Πάρα πολύ καλό σέρβις και τιμές. Για όποιον θέλει να φάει καλό ψάρι και μεζέδες σε πολύ καλές τιμές, είναι το κατάλληλο μέρος!!"</blockquote>
+        <blockquote data-lang="en">"Excellent quality food. Great service and prices. For anyone who wants good fish and mezedes at great prices, this is the place!!"</blockquote>
+        <p class="author">— Maria Ouzouni</p>
+        <p class="source">TripAdvisor, 2024</p>
+      </div>
+      <div class="review-card reveal" style="transition-delay:0.1s">
+        <div class="stars">★★★★★</div>
+        <blockquote data-lang="el">"Το πιο value for money ουζερί-ταβέρνα στη Θεσσαλονίκη. Καλή ποιότητα, νόστιμα πιάτα, καλές τιμές, πολύ καλή εξυπηρέτηση και ο καλύτερος μπακαλιάρος στην πόλη."</blockquote>
+        <blockquote data-lang="en">"The best value for money ouzeri-tavern in Thessaloniki. Good quality, tasty dishes, fair prices, great service and the best cod in the city."</blockquote>
+        <p class="author">— pitsal</p>
+        <p class="source">TripAdvisor, 2022</p>
+      </div>
+      <div class="review-card reveal" style="transition-delay:0.2s">
+        <div class="stars">★★★★★</div>
+        <blockquote data-lang="el">"Πολύ καλή επιλογή για ουζερί. Ωραία πιάτα και μεγάλες μερίδες. Οι τιμές πολύ λογικές και η ατμόσφαιρα πολύ ευχάριστη. Το προσωπικό ευγενικό και εγκάρδιο."</blockquote>
+        <blockquote data-lang="en">"Great choice for an ouzeri. Nice dishes and large portions. Very reasonable prices and a pleasant atmosphere. The staff is polite and warm."</blockquote>
+        <p class="author">— Xara S</p>
+        <p class="source">TripAdvisor, 2025</p>
+      </div>
+      <div class="review-card reveal" style="transition-delay:0.3s">
+        <div class="stars">★★★★★</div>
+        <blockquote data-lang="el">"Παραμένει μια αξιόπιστη λύση για θαλασσινά. Ο μπακαλιάρος σκορδαλιά και ο γαλέος σαγανάκι είναι πολύ καλά πιάτα. Φρέσκα ψάρια, καλές τιμές, εξαιρετική εξυπηρέτηση."</blockquote>
+        <blockquote data-lang="en">"A reliable choice for seafood. The cod with garlic dip and the dogfish saganaki are excellent dishes. Fresh fish, good prices, excellent service."</blockquote>
+        <p class="author">— Stavros</p>
+        <p class="source">Tavernoxoros, 2020</p>
+      </div>
+    </div>
+
+    <div class="review-cta reveal">
+      <p data-lang="el">Μοιράσου τη δική σου εμπειρία!</p>
+      <p data-lang="en">Share your own experience!</p>
+      <a href="https://www.tripadvisor.com.gr/Restaurant_Review-g189473-d11746311-Reviews-Ouzeri_Antheon-Thessaloniki_Thessaloniki_Region_Central_Macedonia.html" target="_blank" class="btn btn-primary">
+        <span data-lang="el">Γράψε μια κριτική στο TripAdvisor</span>
+        <span data-lang="en">Write a review on TripAdvisor</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="container">
+    <p class="section-label" data-lang="el">Επικοινωνία</p>
+    <p class="section-label" data-lang="en">Contact</p>
+    <h2 class="section-title reveal" data-lang="el">Βρείτε μας</h2>
+    <h2 class="section-title reveal" data-lang="en">Find us</h2>
+    <p class="section-desc reveal" data-lang="el">Στην οδό Βαφοπούλου 7, στη συνοικία του Ποσειδωνίου, σε έναν από τους πιο όμορφους δρόμους της Θεσσαλονίκης.</p>
+    <p class="section-desc reveal" data-lang="en">At 7 Vafopoulou street, in the Poseidonio neighborhood, on one of the most beautiful streets of Thessaloniki.</p>
+
+    <div class="contact-grid">
+      <div class="reveal-left">
+        <div class="contact-info">
+          <h3>Ουζερί Ανθέων</h3>
+          <div class="address">
+            <a href="https://maps.google.com/?q=Ουζερί+Ανθέων+Βαφοπούλου+7+Θεσσαλονίκη" target="_blank">
+              Βαφοπούλου 7, Ποσειδώνιο<br>
+              546 46 Θεσσαλονίκη
+            </a>
+          </div>
+
+          <div class="contact-detail">
+            <div class="label" data-lang="el">Τηλέφωνο</div>
+            <div class="label" data-lang="en">Phone</div>
+            <div class="value"><a href="tel:+302310429375">2310 429 375</a></div>
+          </div>
+          <div class="contact-detail">
+            <div class="label" data-lang="el">Κινητό</div>
+            <div class="label" data-lang="en">Mobile</div>
+            <div class="value"><a href="tel:+306978337991">6978 337 991</a></div>
+          </div>
+
+          <div class="hours-table">
+            <div class="hours-row closed">
+              <span class="day" data-lang="el">Δευτέρα</span>
+              <span class="day" data-lang="en">Monday</span>
+              <span class="time" data-lang="el">Κλειστά</span>
+              <span class="time" data-lang="en">Closed</span>
+            </div>
+            <div class="hours-row">
+              <span class="day" data-lang="el">Τρίτη - Πέμπτη</span>
+              <span class="day" data-lang="en">Tuesday - Thursday</span>
+              <span class="time">12:00 - 23:30</span>
+            </div>
+            <div class="hours-row">
+              <span class="day" data-lang="el">Παρασκευή - Σάββατο</span>
+              <span class="day" data-lang="en">Friday - Saturday</span>
+              <span class="time">12:00 - 01:30</span>
+            </div>
+            <div class="hours-row">
+              <span class="day" data-lang="el">Κυριακή</span>
+              <span class="day" data-lang="en">Sunday</span>
+              <span class="time">12:00 - 23:30</span>
+            </div>
+          </div>
+
+          <p style="color: var(--text-light); font-size: 0.8rem; margin-top: 16px;">
+            <span data-lang="el">* Κλειστά την περίοδο του Δεκαπενταύγουστου.</span>
+            <span data-lang="en">* Closed during the mid-August period.</span>
+          </p>
+
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100063686797480" target="_blank" aria-label="Facebook">f</a>
+            <a href="https://www.tripadvisor.com.gr/Restaurant_Review-g189473-d11746311-Reviews-Ouzeri_Antheon-Thessaloniki_Thessaloniki_Region_Central_Macedonia.html" target="_blank" aria-label="TripAdvisor">T</a>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3100.755370515161!2d22.95328121223779!3d40.59713215000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a838d5ed639eb9%3A0x673c71493b4165ca!2zzpXOuc66zrjPgc6_IM6QzrXOuMOhz4zOvQ!5e0!3m2!1sel!2sgr!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>
+    <span data-lang="el">&copy; 2026 Ουζερί Ανθέων. Με εκτίμηση από τη <span>Θεσσαλονίκη</span>.</span>
+    <span data-lang="en">&copy; 2026 Ouzeri Antheon. With love from <span>Thessaloniki</span>.</span>
+  </p>
+  <p class="footer-credit" style="margin-top:8px;font-size:0.75rem">Made with <span class="heart" style="color:var(--accent)">&hearts;</span> by <a href="https://hellenicdev.github.io?utm_source=clients&amp;utm_medium=referral&amp;utm_term=antheon" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline">HellenicDev</a></p>
+</footer>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="close-btn">&times;</span>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<div class="mobile-cta">
+  <a href="tel:+302310429375" class="btn btn-primary">📞 2310 429 375</a>
+  <a href="https://maps.google.com/?q=Ουζερί+Ανθέων+Βαφοπούλου+7+Θεσσαλονίκη" target="_blank" class="btn btn-outline-light" style="border-color:var(--border);color:var(--text)">📍 Οδηγίες</a>
+</div>
+
+<script>
+// Nav hide/show on scroll
+let lastScroll = 0;
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  const cur = window.scrollY;
+  if (cur > lastScroll && cur > 100) navbar.classList.add('nav-hidden');
+  else navbar.classList.remove('nav-hidden');
+  lastScroll = cur;
+});
+
+// Mobile nav toggle
+const toggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+toggle.addEventListener('click', () => { navLinks.classList.toggle('open'); });
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => { navLinks.classList.remove('open'); });
+});
+
+// Language toggle
+let currentLang = 'el';
+function setLang(lang) {
+  currentLang = lang;
+  document.documentElement.lang = lang;
+  document.getElementById('langToggle').textContent = lang === 'el' ? 'EN' : 'ΕΛ';
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    el.style.display = el.getAttribute('data-lang') === lang ? '' : 'none';
+  });
+  document.querySelectorAll('[class*="lang-only-"]').forEach(el => {
+    el.style.display = el.classList.contains('lang-only-' + lang) ? '' : 'none';
+  });
+}
+function toggleLang() { setLang(currentLang === 'el' ? 'en' : 'el'); }
+
+// Lightbox
+function openLightbox(src) {
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+
+// Count-up animation
+function animateCounters() {
+  document.querySelectorAll('[data-count]').forEach(el => {
+    const target = parseInt(el.dataset.count);
+    const isRating = el.dataset.type === 'rating';
+    const duration = 1500;
+    const start = performance.now();
+
+    function update(now) {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = Math.round(eased * target);
+      if (isRating) {
+        el.textContent = (target / 10 * eased).toFixed(1);
+      } else {
+        el.textContent = current + (current < target ? '+' : '');
+      }
+      if (progress < 1) requestAnimationFrame(update);
+    }
+    requestAnimationFrame(update);
+  });
+}
+
+// Scroll reveal
+let countersDone = false;
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      if (!countersDone && entry.target.querySelector('[data-count]')) {
+        countersDone = true;
+        setTimeout(animateCounters, 300);
+      }
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => revealObserver.observe(el));
+
+// Init language visibility
+setLang('el');
+
+// Back to top
+const backTop = document.getElementById('backTop');
+window.addEventListener('scroll', () => {
+  backTop.classList.toggle('show', window.scrollY > 500);
+});
+
+// Hero parallax
+const heroBg = document.querySelector('.hero-bg img');
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  if (scrollY < window.innerHeight) {
+    heroBg.style.transform = `scale(1.05) translateY(${scrollY * 0.1}px)`;
+  }
+});
+</script>
+
+</body>
+</html>
