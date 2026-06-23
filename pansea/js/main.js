@@ -209,14 +209,7 @@
   window.addEventListener('scroll', updateActiveLink);
   updateActiveLink();
 
-  /* PARALLAX HERO */
-  var hero = document.getElementById('hero');
-
-  window.addEventListener('scroll', function () {
-    if (window.scrollY < window.innerHeight) {
-      hero.style.backgroundPositionY = window.scrollY * 0.4 + 'px';
-    }
-  });
+  /* HERO PARALLAX (disabled for performance) */
 
   /* COUNTER ANIMATION FOR AMENITIES */
   var amenityItems = document.querySelectorAll('.amenity-item');
