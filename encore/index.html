@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="el" data-lang="gr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Encore Beach Bar - Ποσείδι, Χαλκιδική. All day beach bar με καφέ, κοκτέιλ, φαγητό και μοναδική ατμόσφαιρα δίπλα στη θάλασσα.">
+  <meta name="keywords" content="Encore Beach Bar, Ποσείδι, Χαλκιδική, beach bar, παραλία, cocktails, coffee, pizza">
+  <meta property="og:title" content="Encore Beach Bar">
+  <meta property="og:description" content="All day beach bar στο Ποσείδι Χαλκιδικής">
+  <meta property="og:type" content="website">
+  <title>Encore Beach Bar | Ποσείδι, Χαλκιδική</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>%F0%9F%8C%8A</text></svg>">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-content">
+      <div class="loading-title">Encore</div>
+      <div class="loading-bar"><div class="loading-bar-fill" id="loadingBar"></div></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">Encore</div>
+    <ul class="nav-links">
+      <li><a href="#about" class="lang-gr">Σχετικά</a><a href="#about" class="lang-en">About</a></li>
+      <li><a href="#menu" class="lang-gr">Μενού</a><a href="#menu" class="lang-en">Menu</a></li>
+      <li><a href="#gallery" class="lang-gr">Φωτογραφίες</a><a href="#gallery" class="lang-en">Gallery</a></li>
+      <li><a href="#contact" class="lang-gr">Επικοινωνία</a><a href="#contact" class="lang-en">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="lang-btn">EN</button>
+      <button class="menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('images/Encore-Beach-Bar8.jpg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-particles"></div>
+    <div class="hero-content">
+      <p class="hero-sub">&#x2600; Since 2015</p>
+      <h1>Encore</h1>
+      <div class="lang-block-gr">
+        <p class="hero-desc">All day beach bar στο Ποσείδι Χαλκιδικής — καφές, κοκτέιλ, φαγητό και ηλιοβασίλεμα δίπλα στη θάλασσα.</p>
+        <a href="#menu" class="hero-btn">&#x2193; Δες το Μενού</a>
+      </div>
+      <div class="lang-block-en">
+        <p class="hero-desc">All day beach bar in Poseidi, Halkidiki — coffee, cocktails, food & sunset by the sea.</p>
+        <a href="#menu" class="hero-btn">&#x2193; View Menu</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+      <span class="lang-gr">Κύλιση</span>
+      <span class="lang-en">Scroll</span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal"><span class="lang-gr">Σχετικά</span><span class="lang-en">About</span></h2>
+      <p class="section-subtitle reveal"><span class="lang-gr">Ανακαλύψτε το Encore Beach Bar — ένας προορισμός για κάθε στιγμή της ημέρας.</span>
+      <span class="lang-en">Discover Encore Beach Bar — a destination for every moment of the day.</span></p>
+      <div class="about-grid">
+        <div class="about-image reveal-left">
+          <img src="images/Encore_Beach_Bar_2026_1-1.jpg" alt="Encore Beach Bar">
+        </div>
+        <div class="about-text reveal-right">
+          <div class="lang-block-gr">
+            <h3>Η εμπειρία Encore</h3>
+            <p>Από το 2015, το Encore έχει καθιερωθεί ως σημείο αναφοράς στην Κασσάνδρα. Από το 2021 λειτουργεί σε νέα, αναβαθμισμένη τοποθεσία στα Αιγαιοπελαγίτικα στο Ποσείδι, προσφέροντας ακόμα πιο ολοκληρωμένη εμπειρία.</p>
+            <p>Ο χώρος συνδυάζει μοντέρνο design με καλοκαιρινή ανεμελιά. Από τις άνετες ξαπλώστρες και τα lounge καθίσματα μέχρι τον χώρο φαγητού, κάθε λεπτομέρεια είναι προσεγμένη.</p>
+            <p>Ανοίγουμε καθημερινά από τις 10:00 το πρωί για καφέ, σνακ, κοκτέιλ και μοναδικές στιγμές μέχρι αργά το βράδυ.</p>
+          </div>
+          <div class="lang-block-en">
+            <h3>The Encore Experience</h3>
+            <p>Since 2015, Encore has established itself as a landmark in Kassandra. In 2021, it moved to a new upgraded location at Aigaionpelagitika in Poseidi, offering an even more complete experience.</p>
+            <p>The space combines modern design with summer carefreeness. From comfortable sunbeds and lounge seating to the dining area, every detail is carefully crafted.</p>
+            <p>We open daily from 10:00 AM for coffee, snacks, cocktails and unforgettable moments until late at night.</p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number">10+</div>
+              <div class="stat-label lang-gr">Χρόνια</div>
+              <div class="stat-label lang-en">Years</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">18</div>
+              <div class="stat-label lang-gr">Κατηγορίες</div>
+              <div class="stat-label lang-en">Categories</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100+</div>
+              <div class="stat-label lang-gr">Επιλογές</div>
+              <div class="stat-label lang-en">Choices</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="menu section" id="menu">
+    <div class="container">
+      <h2 class="section-title reveal"><span class="lang-gr">Μενού</span><span class="lang-en">Menu</span></h2>
+      <p class="section-subtitle reveal"><span class="lang-gr">Επιλέξτε κατηγορία για να δείτε τα προϊόντα μας</span>
+      <span class="lang-en">Select a category to view our items</span></p>
+      <div class="menu-tabs" id="menuTabs"></div>
+      <div class="menu-content-area" id="menuContent"></div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <h2 class="section-title reveal"><span class="lang-gr">Φωτογραφίες</span><span class="lang-en">Gallery</span></h2>
+      <p class="section-subtitle reveal"><span class="lang-gr">Στιγμές από το Encore Beach Bar</span>
+      <span class="lang-en">Moments from Encore Beach Bar</span></p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/Encore_Beach_Bar_2026_1-1.jpg" alt="Encore Beach Bar"><div class="gallery-overlay"><span>+</span></div></div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/Encore_Beach_Bar_2026_1-2.jpg" alt="Encore Beach Bar"><div class="gallery-overlay"><span>+</span></div></div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/Encore_Beach_Bar_2026_1-3.jpg" alt="Encore Beach Bar"><div class="gallery-overlay"><span>+</span></div></div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/Encore_Beach_Bar_2026_1-4.jpg" alt="Encore Beach Bar"><div class="gallery-overlay"><span>+</span></div></div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/Encore_Beach_Bar_2026_1-5.jpg" alt="Encore Beach Bar"><div class="gallery-overlay"><span>+</span></div></div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/Encore_Beach_Bar_2026_1-6.jpg" alt="Encore Beach Bar"><div class="gallery-overlay"><span>+</span></div></div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/Encore_Beach_Bar_2026_1-7.jpg" alt="Encore Beach Bar"><div class="gallery-overlay"><span>+</span></div></div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/Encore_Beach_Bar_2026_1-8.jpg" alt="Encore Beach Bar"><div class="gallery-overlay"><span>+</span></div></div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/Encore_Beach_Bar_2026_1-9.jpg" alt="Encore Beach Bar"><div class="gallery-overlay"><span>+</span></div></div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/Encore-Beach-Bar1.jpg" alt="Encore Beach Bar"><div class="gallery-overlay"><span>+</span></div></div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/Encore-Beach-Bar2.jpg" alt="Encore Beach Bar"><div class="gallery-overlay"><span>+</span></div></div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/Encore-Beach-Bar3.jpg" alt="Encore Beach Bar"><div class="gallery-overlay"><span>+</span></div></div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/Encore-Beach-Bar4.jpg" alt="Encore Beach Bar"><div class="gallery-overlay"><span>+</span></div></div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/Encore-Beach-Bar5.jpg" alt="Encore Beach Bar"><div class="gallery-overlay"><span>+</span></div></div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/Encore-Beach-Bar6.jpg" alt="Encore Beach Bar"><div class="gallery-overlay"><span>+</span></div></div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/Encore-Beach-Bar7.jpg" alt="Encore Beach Bar"><div class="gallery-overlay"><span>+</span></div></div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/Encore-Beach-Bar8.jpg" alt="Encore Beach Bar"><div class="gallery-overlay"><span>+</span></div></div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/Encore-Beach-Bar9.jpg" alt="Encore Beach Bar"><div class="gallery-overlay"><span>+</span></div></div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/Encore-Beach-Bar12.jpg" alt="Encore Beach Bar"><div class="gallery-overlay"><span>+</span></div></div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/Encore-Beach-Bar13.jpg" alt="Encore Beach Bar"><div class="gallery-overlay"><span>+</span></div></div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)"><img src="images/Encore-Beach-Bar14.jpg" alt="Encore Beach Bar"><div class="gallery-overlay"><span>+</span></div></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal"><span class="lang-gr">Επικοινωνία</span><span class="lang-en">Contact</span></h2>
+      <p class="section-subtitle reveal"><span class="lang-gr">Βρείτε μας στο Ποσείδι Χαλκιδικής</span>
+      <span class="lang-en">Find us in Poseidi, Halkidiki</span></p>
+      <div class="contact-grid">
+        <div class="contact-map reveal-left">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4866.223573633149!2d23.3721177!3d39.9774551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a7d2a5af12ae6f%3A0x4ad73c10cd82d57d!2sEncore%20Beach%20Bar!5e1!3m2!1sel!2sgr!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-info reveal-right">
+          <h3 class="lang-gr">Ελάτε να μας γνωρίσετε</h3>
+          <h3 class="lang-en">Come visit us</h3>
+
+          <div class="contact-detail">
+            <span class="icon">&#x1f4cd;</span>
+            <div>
+              <div class="label lang-gr">Διεύθυνση</div>
+              <div class="label lang-en">Address</div>
+              <div class="value lang-gr">Αιγαιοπελαγίτικα, Ποσείδι, Κασσάνδρα Χαλκιδικής 630 77</div>
+              <div class="value lang-en">Aigaionpelagitika, Poseidi, Kassandra, Halkidiki 630 77</div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="icon">&#x1f4de;</span>
+            <div>
+              <div class="label lang-gr">Τηλέφωνο</div>
+              <div class="label lang-en">Phone</div>
+              <div class="value"><a href="tel:+306976717285">+30 697 671 7285</a></div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="icon">&#x1f552;</span>
+            <div>
+              <div class="label lang-gr">Ώρες Λειτουργίας</div>
+              <div class="label lang-en">Hours</div>
+              <div class="value lang-gr">Καθημερινά 10:00 - 23:30</div>
+              <div class="value lang-en">Daily 10:00 - 23:30</div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="icon">&#x1f4f1;</span>
+            <div>
+              <div class="label lang-gr">QR Menu</div>
+              <div class="label lang-en">QR Menu</div>
+              <div class="value"><a href="https://qr.identityadv.gr/%CE%9A%CE%B1%CF%84%CE%AC%CF%83%CF%84%CE%B7%CE%BC%CE%B1/encore" target="_blank" rel="noopener">identityadv.gr/encore</a></div>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://www.instagram.com/encore_beach__bar/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/p/Encore-100056213126363/" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#x2191;</button>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Encore Beach Bar. <span class="lang-gr">Με αγάπη από το Ποσείδι.</span><span class="lang-en">With love from Poseidi.</span></p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <button class="lightbox-prev" onclick="navigateLightbox(-1)">&#8249;</button>
+    <img id="lightboxImg" src="" alt="Enlarge">
+    <button class="lightbox-next" onclick="navigateLightbox(1)">&#8250;</button>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
