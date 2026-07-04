@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Γαλήνη | Ψαροταβέρνα Μόλα Καλύβα</title>
+<meta name="description" content="Ψαροταβέρνα Γαλήνη στη Μόλα Καλύβα, Κασσάνδρα Χαλκιδικής. Φρέσκα θαλασσινά, μοναδική θέα στο Αιγαίο, παραδοσιακή ελληνική κουζίνα.">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="demo-badge">DEMO</div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#hero" class="nav-logo">Γαλήνη</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about" data-lang="about">Ιστορία</a>
+      <a href="#menu" data-lang="menu">Μενού</a>
+      <a href="#gallery" data-lang="gallery">Φωτογραφίες</a>
+      <a href="#reviews" data-lang="reviews">Κριτικές</a>
+      <a href="#contact" data-lang="contact">Επικοινωνία</a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-text reveal-up">
+      <h1 class="hero-title">Γαλήνη</h1>
+      <p class="hero-subtitle" data-lang="hero-sub">Ψαροταβέρνα • Μόλα Καλύβα</p>
+      <p class="hero-desc" data-lang="hero-desc">Φρέσκα θαλασσινά & ελληνική κουζίνα με θέα στο Αιγαίο</p>
+    </div>
+    <div class="hero-actions reveal-up" style="transition-delay:0.2s">
+      <a href="#contact" class="btn btn-primary" data-lang="hero-cta">Επικοινωνία</a>
+      <a href="#menu" class="btn btn-outline" data-lang="hero-menu">Δείτε το Μενού</a>
+    </div>
+  </div>
+  <div class="hero-scroll" data-lang="scroll">Κυλήστε κάτω</div>
+  <div class="hero-waves">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,120 L0,120 Z" fill="#ffffff" opacity="0.08"/><path d="M0,80 C240,100 480,40 720,80 C960,120 1200,20 1440,80 L1440,120 L0,120 Z" fill="#ffffff" opacity="0.05"/></svg>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image reveal-left">
+        <img src="assets/galini-seafood-dsc-0876-1200.jpg" alt="Γαλήνη Ψαροταβέρνα εσωτερικός χώρος">
+      </div>
+      <div class="about-text reveal-right">
+        <h2 data-lang="about-title">Η Ιστορία Μας</h2>
+        <p data-lang="about-p1">Η <strong>Ψαροταβέρνα Γαλήνη</strong> βρίσκεται στην όμορφη Μόλα Καλύβα της Κασσάνδρας, σε μια μαγευτική τοποθεσία πάνω στη θάλασσα. Το όνομά μας αποπνέει την ηρεμία και τη γαλήνη που νιώθει κάθε επισκέπτης στον χώρο μας.</p>
+        <p data-lang="about-p2">Με φρέσκα ψάρια και θαλασσινά, παραδοσιακές συνταγές και σπιτικές γεύσεις, σερβίρουμε αγάπη σε κάθε πιάτο. Οι μερίδες μας είναι γενναιόδωρες, οι πρώτες ύλες επιλεγμένες και η θέα στο Αιγαίο μαγευτική — ειδικά το ηλιοβασίλεμα.</p>
+        <p data-lang="about-p3">Είτε για οικογενειακό γεύμα, είτε για ρομαντικό δείπνο ή χαλαρή έξοδο με φίλους, η Γαλήνη είναι η ιδανική επιλογή. Σας περιμένουμε!</p>
+        <div class="about-sign" data-lang="about-sign">— Κυπαρισσός Πάρις</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section stats" id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal-up">
+        <div class="stat-number"><span class="counter" data-target="4.2" data-decimal="1">0</span><span class="stat-suffix">/5</span></div>
+        <div class="stat-label" data-lang="stat-reviews">70+ Κριτικές</div>
+      </div>
+      <div class="stat-item reveal-up" style="transition-delay:0.1s">
+        <div class="stat-number"><span class="counter" data-target="2">0</span></div>
+        <div class="stat-label" data-lang="stat-rank">Καλύτερο στην περιοχή</div>
+      </div>
+      <div class="stat-item reveal-up" style="transition-delay:0.2s">
+        <div class="stat-number">Travellers' Choice</div>
+        <div class="stat-label" data-lang="stat-award">Tripadvisor</div>
+      </div>
+      <div class="stat-item reveal-up" style="transition-delay:0.3s">
+        <div class="stat-number">12:00–00:00</div>
+        <div class="stat-label" data-lang="stat-hours">Καθημερινά</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section menu" id="menu">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <h2 data-lang="menu-title">Το Μενού Μας</h2>
+      <p class="section-sub" data-lang="menu-sub">Φρέσκα ψάρια, θαλασσινά, κρεατικά & σπιτικές σαλάτες</p>
+    </div>
+    <div class="menu-categories">
+      <div class="menu-category reveal-up">
+        <div class="menu-icon">🐟</div>
+        <h3 data-lang="menu-fish">Φρέσκα Ψάρια</h3>
+        <p data-lang="menu-fish-desc">Ψητά στα κάρβουνα, τηγανητά & μαγειρευτά</p>
+      </div>
+      <div class="menu-category reveal-up" style="transition-delay:0.1s">
+        <div class="menu-icon">🦐</div>
+        <h3 data-lang="menu-seafood">Θαλασσινά</h3>
+        <p data-lang="menu-seafood-desc">Γαρίδες, μύδια, καλαμάρια, χταπόδι & άλλα</p>
+      </div>
+      <div class="menu-category reveal-up" style="transition-delay:0.2s">
+        <div class="menu-icon">🥩</div>
+        <h3 data-lang="menu-meat">Κρεατικά</h3>
+        <p data-lang="menu-meat-desc">Μπιφτέκια, σουβλάκια & ψητά κρέατα</p>
+      </div>
+      <div class="menu-category reveal-up" style="transition-delay:0.3s">
+        <div class="menu-icon">🥗</div>
+        <h3 data-lang="menu-salads">Σαλάτες & Ορεκτικά</h3>
+        <p data-lang="menu-salads-desc">Φρέσκες σπιτικές σαλάτες & παραδοσιακοί μεζέδες</p>
+      </div>
+    </div>
+    <div class="menu-gallery reveal-up" id="menuGallery">
+      <a href="assets/Galini-gr-ru-menu-18-640x905.jpg" target="_blank" class="menu-thumb">
+        <img src="assets/Galini-gr-ru-menu-18-640x905.jpg" alt="Menu page 1">
+      </a>
+      <a href="assets/Galini-gr-ru-menu-19-640x905.jpg" target="_blank" class="menu-thumb">
+        <img src="assets/Galini-gr-ru-menu-19-640x905.jpg" alt="Menu page 2">
+      </a>
+      <a href="assets/Galini-gr-ru-menu-20-640x905.jpg" target="_blank" class="menu-thumb">
+        <img src="assets/Galini-gr-ru-menu-20-640x905.jpg" alt="Menu page 3">
+      </a>
+      <a href="assets/Galini-gr-ru-menu-21-640x905.jpg" target="_blank" class="menu-thumb">
+        <img src="assets/Galini-gr-ru-menu-21-640x905.jpg" alt="Menu page 4">
+      </a>
+      <a href="assets/Galini-gr-ru-menu-22-640x905.jpg" target="_blank" class="menu-thumb">
+        <img src="assets/Galini-gr-ru-menu-22-640x905.jpg" alt="Menu page 5">
+      </a>
+      <a href="assets/Galini-gr-ru-menu-23-640x905.jpg" target="_blank" class="menu-thumb">
+        <img src="assets/Galini-gr-ru-menu-23-640x905.jpg" alt="Menu page 6">
+      </a>
+      <a href="assets/Galini-gr-ru-menu-24-640x905.jpg" target="_blank" class="menu-thumb">
+        <img src="assets/Galini-gr-ru-menu-24-640x905.jpg" alt="Menu page 7">
+      </a>
+      <a href="assets/Galini-gr-ru-menu-25-640x905.jpg" target="_blank" class="menu-thumb">
+        <img src="assets/Galini-gr-ru-menu-25-640x905.jpg" alt="Menu page 8">
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section gallery" id="gallery">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <h2 data-lang="gallery-title">Φωτογραφίες</h2>
+      <p class="section-sub" data-lang="gallery-sub">Ο χώρος μας, η θέα & οι γεύσεις μας</p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item large reveal-scale"><img src="assets/galini-seafood-dsc-0870-1200.jpg" alt="Γαλήνη θέα"></div>
+      <div class="gallery-item reveal-scale" style="transition-delay:0.05s"><img src="assets/galini-seafood-dsc-0763-1200.jpg" alt="Γαλήνη χώρος"></div>
+      <div class="gallery-item reveal-scale" style="transition-delay:0.1s"><img src="assets/galini-seafood-dsc-0859-1200.jpg" alt="Γαλήνη τραπέζι"></div>
+      <div class="gallery-item reveal-scale" style="transition-delay:0.15s"><img src="assets/galini-seafood-dsc-0776-1200.jpg" alt="Γαλήνη εξωτερικός χώρος"></div>
+      <div class="gallery-item reveal-scale" style="transition-delay:0.2s"><img src="assets/galini-seafood-dsc-0842-1200.jpg" alt="Γαλήνη διακόσμηση"></div>
+      <div class="gallery-item reveal-scale" style="transition-delay:0.25s"><img src="assets/galini-seafood-dsc-0849-1200.jpg" alt="Γαλήνη τραπεζαρία"></div>
+      <div class="gallery-item reveal-scale" style="transition-delay:0.3s"><img src="assets/galini-seafood-dsc-0858-1200.jpg" alt="Γαλήνη βραδινή ατμόσφαιρα"></div>
+      <div class="gallery-item reveal-scale" style="transition-delay:0.35s"><img src="assets/galini-seafood-dsc-0882-1200.jpg" alt="Γαλήνη εσωτερικός χώρος"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section reviews" id="reviews">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <h2 data-lang="reviews-title">Τι Λένε οι Πελάτες Μας</h2>
+      <p class="section-sub" data-lang="reviews-sub">Αληθινές κριτικές από το Tripadvisor</p>
+    </div>
+    <div class="carousel-container reveal-up">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="carousel-slide">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text" data-lang="review1">"Σε μία πάρα πολύ ωραία τοποθεσία στην θάλασσα βρήκαμε μια όμορφη ταβέρνα που σερβίρουν φρέσκο ψάρι και σπιτίσιους μεζέδες. Η φιλοξενία και το service ήταν άψογο."</p>
+            <div class="review-author">— Isaak, Αύγουστος 2023</div>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text" data-lang="review2">"Ένας χώρος με μαγευτική θέα ειδικά στο ηλιοβασίλεμα, με καταπληκτική κουζίνα, γεύσεις και ευγενικό προσωπικό! Η ποιότητα παραμένει ίδια χρόνο με τον χρόνο!"</p>
+            <div class="review-author">— Ioannis K., Ιούλιος 2025</div>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text" data-lang="review3">"Εξαιρετική ταβέρνα με φρέσκα θαλασσινά, υπέροχη θέα τη θάλασσα και πολύ εξυπηρετικό προσωπικό. Οι μερίδες ήταν πάρα πολύ χορταστικές και οι τιμές κανονικές."</p>
+            <div class="review-author">— Όλγα Ρ., Ιούνιος 2024</div>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text" data-lang="review4">"Για τη θέα και την τοποθεσία τα λόγια είναι περιττά. Τα θαλασσινά είναι εξαιρετικά, οι σαλάτες πολύ εύγευστες. Το προσωπικό ευγενέστατο, η εξυπηρέτηση γρήγορη."</p>
+            <div class="review-author">— sotiris, Αύγουστος 2024</div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous">‹</button>
+      <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Next">›</button>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+    <div class="reviews-more reveal-up">
+      <a href="https://www.tripadvisor.com.gr/Restaurant_Review-g2590352-d7038596-Reviews-Fish_tavern_Galini-Mola_Kalyva_Kassandra_Halkidiki_Region_Central_Macedonia.html" target="_blank" rel="noopener" class="btn btn-outline" data-lang="reviews-more">Δείτε όλες τις κριτικές στο Tripadvisor</a>
+    </div>
+  </div>
+</section>
+
+<section class="section facilities" id="facilities">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <h2 data-lang="facilities-title">Παροχές</h2>
+      <p class="section-sub" data-lang="facilities-sub">Όλα όσα χρειάζεστε για μια αξέχαστη εμπειρία</p>
+    </div>
+    <div class="facilities-grid">
+      <div class="facility-item reveal-up"><div class="facility-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/></svg></div><h3 data-lang="fac-wifi">Δωρεάν WiFi</h3></div>
+      <div class="facility-item reveal-up" style="transition-delay:0.05s"><div class="facility-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><h3 data-lang="fac-parking">Ιδιωτικός Χώρος Στάθμευσης</h3></div>
+      <div class="facility-item reveal-up" style="transition-delay:0.1s"><div class="facility-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><h3 data-lang="fac-hours">Λειτουργία 12:00–00:00</h3></div>
+      <div class="facility-item reveal-up" style="transition-delay:0.15s"><div class="facility-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div><h3 data-lang="fac-wedding">Γάμοι & Δεξιώσεις</h3></div>
+      <div class="facility-item reveal-up" style="transition-delay:0.2s"><div class="facility-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg></div><h3 data-lang="fac-location">Θέα στη Θάλασσα</h3></div>
+      <div class="facility-item reveal-up" style="transition-delay:0.25s"><div class="facility-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8"/><path d="M8 10h8"/><path d="M8 14h5"/></svg></div><h3 data-lang="fac-playground">Παιδική Χαρά</h3></div>
+      <div class="facility-item reveal-up" style="transition-delay:0.3s"><div class="facility-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-7m0-18H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7m0-18v18"/></svg></div><h3 data-lang="fac-accessibility">Πρόσβαση για ΑμεΑ</h3></div>
+      <div class="facility-item reveal-up" style="transition-delay:0.35s"><div class="facility-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 22v-5h6v5"/><path d="M22 10l-10-8-10 8"/><path d="M20 14v8H4v-8"/></svg></div><h3 data-lang="fac-garden">Κήπος & Εξωτερικοί Χώροι</h3></div>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <h2 data-lang="contact-title">Επικοινωνήστε Μαζί Μας</h2>
+      <p class="section-sub" data-lang="contact-sub">Ελάτε να ζήσετε τη γαλήνια εμπειρία μας</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <div class="contact-item">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <h3 data-lang="contact-address-h">Διεύθυνση</h3>
+            <p>Επαρ.Οδ. Παλιουρίου-Αφύτου 15<br>63085 Μόλα Καλύβα, Κασσάνδρα<br>Χαλκιδική, Ελλάδα</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div>
+            <h3 data-lang="contact-phone-h">Τηλέφωνο</h3>
+            <p><a href="tel:+302374042233" class="contact-link">+30 2374 042233</a><br><a href="tel:+306975671143" class="contact-link">+30 6975 671143</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div>
+            <h3 data-lang="contact-email-h">Email</h3>
+            <p><a href="mailto:pariskup72@gmail.com" class="contact-link">pariskup72@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div>
+            <h3 data-lang="contact-hours-h">Ώρες Λειτουργίας</h3>
+            <p data-lang="contact-hours-p">Καθημερινά: 12:00 μ.μ. – 12:00 π.μ.</p>
+          </div>
+        </div>
+        <div class="contact-social">
+          <a href="https://www.facebook.com/%CE%A8%CE%B1%CF%81%CE%BF%CF%84%CE%B1%CE%B2%CE%B5%CF%81%CE%BD%CE%B1-%CE%93%CE%B1%CE%BB%CE%B7%CE%BD%CE%B7-100063965648599/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.tripadvisor.com.gr/Restaurant_Review-g2590352-d7038596-Reviews-Fish_tavern_Galini-Mola_Kalyva_Kassandra_Halkidiki_Region_Central_Macedonia.html" target="_blank" rel="noopener" class="social-link" aria-label="Tripadvisor"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-2-8c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm6 0c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2z"/></svg></a>
+          <a href="https://www.google.com/maps/place/%CE%93%CE%B1%CE%BB%CE%B7%CE%BD%CE%B7/@39.9714753,23.4458826,17.42z/" target="_blank" rel="noopener" class="social-link" aria-label="Google Maps"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a>
+        </div>
+      </div>
+      <div class="contact-form-wrap reveal-right">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="formName" class="form-input" required placeholder=" ">
+            <label for="formName" class="form-label" data-lang="form-name">Όνομα</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="formEmail" class="form-input" required placeholder=" ">
+            <label for="formEmail" class="form-label" data-lang="form-email">Email</label>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="formPhone" class="form-input" placeholder=" ">
+            <label for="formPhone" class="form-label" data-lang="form-phone">Τηλέφωνο</label>
+          </div>
+          <div class="form-group">
+            <textarea id="formMessage" class="form-input form-textarea" rows="4" required placeholder=" "></textarea>
+            <label for="formMessage" class="form-label" data-lang="form-message">Μήνυμα</label>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit" id="formSubmit" data-lang="form-submit">
+            <span class="btn-text" data-lang="form-send">Αποστολή</span>
+            <span class="btn-spinner"></span>
+          </button>
+          <div class="form-success" id="formSuccess" data-lang="form-success">Το μήνυμά σας στάλθηκε επιτυχώς! Θα επικοινωνήσουμε σύντομα.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Γαλήνη</h3>
+        <p data-lang="footer-desc">Ψαροταβέρνα στη Μόλα Καλύβα, Κασσάνδρα Χαλκιδικής. Φρέσκα θαλασσινά, μοναδική εμπειρία.</p>
+      </div>
+      <div class="footer-links">
+        <h4 data-lang="footer-nav">Πλοήγηση</h4>
+        <a href="#about" data-lang="about">Ιστορία</a>
+        <a href="#menu" data-lang="menu">Μενού</a>
+        <a href="#gallery" data-lang="gallery">Φωτογραφίες</a>
+        <a href="#reviews" data-lang="reviews">Κριτικές</a>
+        <a href="#contact" data-lang="contact">Επικοινωνία</a>
+      </div>
+      <div class="footer-links">
+        <h4 data-lang="footer-contact">Επικοινωνία</h4>
+        <a href="tel:+302374042233">+30 2374 042233</a>
+        <a href="mailto:pariskup72@gmail.com">pariskup72@gmail.com</a>
+        <a href="https://www.facebook.com/%CE%A8%CE%B1%CF%81%CE%BF%CF%84%CE%B1%CE%B2%CE%B5%CF%81%CE%BD%CE%B1-%CE%93%CE%B1%CE%BB%CE%B7%CE%BD%CE%B7-100063965648599/" target="_blank" rel="noopener" data-lang="footer-facebook">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Γαλήνη Ψαροταβέρνα. <span data-lang="footer-rights">Με επιφύλαξη παντός δικαιώματος.</span></p>
+      <p class="footer-credit">Made with <span class="heart">&hearts;</span> by <a href="https://hellenicdev.github.io?utm_source=clients&utm_medium=referral&utm_term=galini" target="_blank" rel="noopener">HellenicDev</a></p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/306975671143?text=%CE%9A%CE%B1%CE%BB%CE%B7%CE%BC%CE%AD%CF%81%CE%B1!%20%CE%88%CF%87%CF%89%20%CE%BC%CE%B9%CE%B1%20%CE%B5%CF%81%CF%8E%CF%84%CE%B7%CF%83%CE%B7%20%CE%B3%CE%B9%CE%B1%20%CF%84%CE%B7%CE%BD%20%CF%88%CE%B1%CF%81%CE%BF%CF%84%CE%B1%CE%B2%CE%AC%CF%81%CE%BD%CE%B1%20%CE%93%CE%B1%CE%BB%CE%AE%CE%BD%CE%B7." target="_blank" rel="noopener" class="whatsapp-btn" id="whatsappBtn" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
