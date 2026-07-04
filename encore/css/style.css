@@ -1064,6 +1064,40 @@ footer span {
   color: var(--sunset);
 }
 
+.footer-credit {
+  margin-top: 8px;
+  font-size: 0.8rem;
+}
+
+.footer-credit .heart {
+  color: #e74c3c;
+}
+
+.footer-credit a {
+  color: var(--gold);
+  font-weight: 500;
+  transition: color var(--transition);
+}
+
+.footer-credit a:hover {
+  color: var(--sunset);
+}
+
+.demo-badge {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  background: #e74c3c;
+  color: #fff;
+  font: 700 13px/1 'Inter', sans-serif;
+  padding: 6px 16px;
+  border-radius: 4px;
+  letter-spacing: 2px;
+  box-shadow: 0 2px 12px rgba(231,76,60,0.4);
+  pointer-events: none;
+}
+
 /* ===== Language Toggle ===== */
 .lang-en {
   display: none !important;
